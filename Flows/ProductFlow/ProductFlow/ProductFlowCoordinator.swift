@@ -1,6 +1,6 @@
 //
 //  ProductFlowCoordinator.swift
-//  PrductFlow
+//  ProductFlow
 //
 //  Created by Muhammed Rashid on 12/05/21.
 //
@@ -29,12 +29,10 @@ class ProductFlowCoordinator: BaseFlowCoordinator, ProductUIFlowCoordinatorFacto
 
 extension ProductFlowCoordinator: ProductUIEventsDelegate {
     public func purchase(_ product: Product, quantity: Int, flowCoordinator: BaseFlowCoordinator) {
-        print("purchase \(flowCoordinator) -  \(CFGetRetainCount(flowCoordinator))")
         let purchaseCoordinator = purchaseProductCoordinator(router: router, product: product, quantity: quantity)
         purchaseCoordinator.flowEventsDelegate = self
         purchaseCoordinator.start()
         addChildCoordinator(purchaseCoordinator)
-        print("purchase \(flowCoordinator) -  \(CFGetRetainCount(flowCoordinator))")
     }
 }
 

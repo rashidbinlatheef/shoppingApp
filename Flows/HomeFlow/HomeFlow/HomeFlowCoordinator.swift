@@ -9,7 +9,6 @@ import Foundation
 import FlowController
 import UIKit
 import ProfileUI
-import ProductUI
 import PaymentUI
 import ShoppingAPI
 import ProductFlow
@@ -48,11 +47,3 @@ class HomeFlowCoordinator: BaseFlowCoordinator, ProfileUIFlowCoordinatorFactory,
 
 extension HomeFlowCoordinator: ProfileUIFlowEventsDelegate {}
 
-extension HomeFlowCoordinator: ProductUIEventsDelegate {
-    public func purchase(_ product: Product, quantity: Int, flowCoordinator: BaseFlowCoordinator) {
-        let purchaseCoordinator = purchaseProductCoordinator(router: router, product: product, quantity: quantity)
-        purchaseCoordinator.flowEventsDelegate = self
-        purchaseCoordinator.start()
-        addChildCoordinator(purchaseCoordinator)
-    }
-}

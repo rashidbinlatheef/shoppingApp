@@ -7,38 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C76EEB25264D6E6200C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */; };
-		C76EEB2A264D6E6200C16419 /* ShoppingAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB29264D6E6200C16419 /* ShoppingAPITests.swift */; };
-		C76EEB2C264D6E6200C16419 /* ShoppingAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C76EEB37264D6EBD00C16419 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB36264D6EBD00C16419 /* Networking.framework */; };
-		C76EEB38264D6EBD00C16419 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB36264D6EBD00C16419 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C76EEB3B264D76D600C16419 /* ShoppingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */; };
-		C76EEB4C264D992C00C16419 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB49264D992C00C16419 /* Product.swift */; };
-		C76EEB4D264D992C00C16419 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4A264D992C00C16419 /* User.swift */; };
-		C76EEB4E264D992C00C16419 /* UpgradePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4B264D992C00C16419 /* UpgradePlan.swift */; };
-		C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; };
-		C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB6A2650321D00C16419 /* ProductFlow.framework */; };
+		C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB782650321D00C16419 /* ProductFlowTests.swift */; };
+		C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB6D2650321D00C16419 /* ProductFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76EEB862650324900C16419 /* ProductFlow+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */; };
+		C76EEB872650324900C16419 /* ProductFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */; };
+		C76EEB8A2650328E00C16419 /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; };
+		C76EEB8B2650328E00C16419 /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76EEB8E2650329900C16419 /* ProductUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB8D2650329900C16419 /* ProductUI.framework */; };
+		C76EEB8F2650329900C16419 /* ProductUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB8D2650329900C16419 /* ProductUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76EEB912650329E00C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB902650329E00C16419 /* PaymentUI.framework */; };
+		C76EEB922650329E00C16419 /* PaymentUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB902650329E00C16419 /* PaymentUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76EEB94265032A400C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB93265032A400C16419 /* ShoppingAPI.framework */; };
+		C76EEB95265032A400C16419 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB93265032A400C16419 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C76EEB26264D6E6200C16419 /* PBXContainerItemProxy */ = {
+		C76EEB752650321D00C16419 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C76EEB12264D6E6200C16419 /* Project object */;
+			containerPortal = C76EEB612650321D00C16419 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C76EEB1A264D6E6200C16419;
-			remoteInfo = ShoppingAPi;
+			remoteGlobalIDString = C76EEB692650321D00C16419;
+			remoteInfo = ProductFlow;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C76EEB39264D6EBE00C16419 /* Embed Frameworks */ = {
+		C76EEB8C2650328E00C16419 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C76EEB38264D6EBD00C16419 /* Networking.framework in Embed Frameworks */,
-				C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */,
+				C76EEB8F2650329900C16419 /* ProductUI.framework in Embed Frameworks */,
+				C76EEB8B2650328E00C16419 /* FlowController.framework in Embed Frameworks */,
+				C76EEB922650329E00C16419 /* PaymentUI.framework in Embed Frameworks */,
+				C76EEB95265032A400C16419 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,169 +50,163 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingAPI.h; sourceTree = "<group>"; };
-		C76EEB1F264D6E6200C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76EEB24264D6E6200C16419 /* ShoppingAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76EEB29264D6E6200C16419 /* ShoppingAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAPITests.swift; sourceTree = "<group>"; };
-		C76EEB2B264D6E6200C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76EEB36264D6EBD00C16419 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAPIClient.swift; sourceTree = "<group>"; };
-		C76EEB49264D992C00C16419 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		C76EEB4A264D992C00C16419 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C76EEB4B264D992C00C16419 /* UpgradePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradePlan.swift; sourceTree = "<group>"; };
-		C76EEB5826502F6C00C16419 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB6A2650321D00C16419 /* ProductFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB6D2650321D00C16419 /* ProductFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFlow.h; sourceTree = "<group>"; };
+		C76EEB6E2650321D00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76EEB732650321D00C16419 /* ProductFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB782650321D00C16419 /* ProductFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFlowTests.swift; sourceTree = "<group>"; };
+		C76EEB7A2650321E00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductFlow+FlowController.swift"; sourceTree = "<group>"; };
+		C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFlowCoordinator.swift; sourceTree = "<group>"; };
+		C76EEB892650328E00C16419 /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB8D2650329900C16419 /* ProductUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProductUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB902650329E00C16419 /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB93265032A400C16419 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C76EEB18264D6E6200C16419 /* Frameworks */ = {
+		C76EEB672650321D00C16419 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB37264D6EBD00C16419 /* Networking.framework in Frameworks */,
-				C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */,
+				C76EEB8E2650329900C16419 /* ProductUI.framework in Frameworks */,
+				C76EEB8A2650328E00C16419 /* FlowController.framework in Frameworks */,
+				C76EEB912650329E00C16419 /* PaymentUI.framework in Frameworks */,
+				C76EEB94265032A400C16419 /* ShoppingAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C76EEB21264D6E6200C16419 /* Frameworks */ = {
+		C76EEB702650321D00C16419 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB25264D6E6200C16419 /* ShoppingAPI.framework in Frameworks */,
+				C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C76EEB11264D6E6200C16419 = {
+		C76EEB602650321D00C16419 = {
 			isa = PBXGroup;
 			children = (
-				C76EEB1D264D6E6200C16419 /* ShoppingAPI */,
-				C76EEB28264D6E6200C16419 /* ShoppingAPITests */,
-				C76EEB1C264D6E6200C16419 /* Products */,
-				C76EEB35264D6EBD00C16419 /* Frameworks */,
+				C76EEB6C2650321D00C16419 /* ProductFlow */,
+				C76EEB772650321D00C16419 /* ProductFlowTests */,
+				C76EEB6B2650321D00C16419 /* Products */,
+				C76EEB882650328E00C16419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C76EEB1C264D6E6200C16419 /* Products */ = {
+		C76EEB6B2650321D00C16419 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */,
-				C76EEB24264D6E6200C16419 /* ShoppingAPITests.xctest */,
+				C76EEB6A2650321D00C16419 /* ProductFlow.framework */,
+				C76EEB732650321D00C16419 /* ProductFlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C76EEB1D264D6E6200C16419 /* ShoppingAPI */ = {
+		C76EEB6C2650321D00C16419 /* ProductFlow */ = {
 			isa = PBXGroup;
 			children = (
-				C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */,
-				C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */,
-				C76EEB42264D990B00C16419 /* Models */,
-				C76EEB1F264D6E6200C16419 /* Info.plist */,
+				C76EEB6D2650321D00C16419 /* ProductFlow.h */,
+				C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */,
+				C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */,
+				C76EEB6E2650321D00C16419 /* Info.plist */,
 			);
-			path = ShoppingAPI;
+			path = ProductFlow;
 			sourceTree = "<group>";
 		};
-		C76EEB28264D6E6200C16419 /* ShoppingAPITests */ = {
+		C76EEB772650321D00C16419 /* ProductFlowTests */ = {
 			isa = PBXGroup;
 			children = (
-				C76EEB29264D6E6200C16419 /* ShoppingAPITests.swift */,
-				C76EEB2B264D6E6200C16419 /* Info.plist */,
+				C76EEB782650321D00C16419 /* ProductFlowTests.swift */,
+				C76EEB7A2650321E00C16419 /* Info.plist */,
 			);
-			path = ShoppingAPITests;
+			path = ProductFlowTests;
 			sourceTree = "<group>";
 		};
-		C76EEB35264D6EBD00C16419 /* Frameworks */ = {
+		C76EEB882650328E00C16419 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C76EEB5826502F6C00C16419 /* Commons.framework */,
-				C76EEB36264D6EBD00C16419 /* Networking.framework */,
+				C76EEB93265032A400C16419 /* ShoppingAPI.framework */,
+				C76EEB902650329E00C16419 /* PaymentUI.framework */,
+				C76EEB8D2650329900C16419 /* ProductUI.framework */,
+				C76EEB892650328E00C16419 /* FlowController.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C76EEB42264D990B00C16419 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C76EEB49264D992C00C16419 /* Product.swift */,
-				C76EEB4A264D992C00C16419 /* User.swift */,
-				C76EEB4B264D992C00C16419 /* UpgradePlan.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C76EEB16264D6E6200C16419 /* Headers */ = {
+		C76EEB652650321D00C16419 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB2C264D6E6200C16419 /* ShoppingAPI.h in Headers */,
+				C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C76EEB1A264D6E6200C16419 /* ShoppingAPI */ = {
+		C76EEB692650321D00C16419 /* ProductFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C76EEB2F264D6E6200C16419 /* Build configuration list for PBXNativeTarget "ShoppingAPI" */;
+			buildConfigurationList = C76EEB7E2650321E00C16419 /* Build configuration list for PBXNativeTarget "ProductFlow" */;
 			buildPhases = (
-				C76EEB16264D6E6200C16419 /* Headers */,
-				C76EEB17264D6E6200C16419 /* Sources */,
-				C76EEB18264D6E6200C16419 /* Frameworks */,
-				C76EEB19264D6E6200C16419 /* Resources */,
-				C76EEB39264D6EBE00C16419 /* Embed Frameworks */,
+				C76EEB652650321D00C16419 /* Headers */,
+				C76EEB662650321D00C16419 /* Sources */,
+				C76EEB672650321D00C16419 /* Frameworks */,
+				C76EEB682650321D00C16419 /* Resources */,
+				C76EEB8C2650328E00C16419 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ShoppingAPI;
-			productName = ShoppingAPi;
-			productReference = C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */;
+			name = ProductFlow;
+			productName = ProductFlow;
+			productReference = C76EEB6A2650321D00C16419 /* ProductFlow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C76EEB23264D6E6200C16419 /* ShoppingAPITests */ = {
+		C76EEB722650321D00C16419 /* ProductFlowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C76EEB32264D6E6200C16419 /* Build configuration list for PBXNativeTarget "ShoppingAPITests" */;
+			buildConfigurationList = C76EEB812650321E00C16419 /* Build configuration list for PBXNativeTarget "ProductFlowTests" */;
 			buildPhases = (
-				C76EEB20264D6E6200C16419 /* Sources */,
-				C76EEB21264D6E6200C16419 /* Frameworks */,
-				C76EEB22264D6E6200C16419 /* Resources */,
+				C76EEB6F2650321D00C16419 /* Sources */,
+				C76EEB702650321D00C16419 /* Frameworks */,
+				C76EEB712650321D00C16419 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C76EEB27264D6E6200C16419 /* PBXTargetDependency */,
+				C76EEB762650321D00C16419 /* PBXTargetDependency */,
 			);
-			name = ShoppingAPITests;
-			productName = ShoppingAPiTests;
-			productReference = C76EEB24264D6E6200C16419 /* ShoppingAPITests.xctest */;
+			name = ProductFlowTests;
+			productName = ProductFlowTests;
+			productReference = C76EEB732650321D00C16419 /* ProductFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C76EEB12264D6E6200C16419 /* Project object */ = {
+		C76EEB612650321D00C16419 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					C76EEB1A264D6E6200C16419 = {
+					C76EEB692650321D00C16419 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
-					C76EEB23264D6E6200C16419 = {
+					C76EEB722650321D00C16419 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = C76EEB15264D6E6200C16419 /* Build configuration list for PBXProject "ShoppingAPI" */;
+			buildConfigurationList = C76EEB642650321D00C16419 /* Build configuration list for PBXProject "ProductFlow" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,26 +214,26 @@
 				en,
 				Base,
 			);
-			mainGroup = C76EEB11264D6E6200C16419;
-			productRefGroup = C76EEB1C264D6E6200C16419 /* Products */;
+			mainGroup = C76EEB602650321D00C16419;
+			productRefGroup = C76EEB6B2650321D00C16419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C76EEB1A264D6E6200C16419 /* ShoppingAPI */,
-				C76EEB23264D6E6200C16419 /* ShoppingAPITests */,
+				C76EEB692650321D00C16419 /* ProductFlow */,
+				C76EEB722650321D00C16419 /* ProductFlowTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C76EEB19264D6E6200C16419 /* Resources */ = {
+		C76EEB682650321D00C16419 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C76EEB22264D6E6200C16419 /* Resources */ = {
+		C76EEB712650321D00C16419 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,37 +243,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C76EEB17264D6E6200C16419 /* Sources */ = {
+		C76EEB662650321D00C16419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB3B264D76D600C16419 /* ShoppingAPIClient.swift in Sources */,
-				C76EEB4C264D992C00C16419 /* Product.swift in Sources */,
-				C76EEB4D264D992C00C16419 /* User.swift in Sources */,
-				C76EEB4E264D992C00C16419 /* UpgradePlan.swift in Sources */,
+				C76EEB872650324900C16419 /* ProductFlowCoordinator.swift in Sources */,
+				C76EEB862650324900C16419 /* ProductFlow+FlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C76EEB20264D6E6200C16419 /* Sources */ = {
+		C76EEB6F2650321D00C16419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB2A264D6E6200C16419 /* ShoppingAPITests.swift in Sources */,
+				C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C76EEB27264D6E6200C16419 /* PBXTargetDependency */ = {
+		C76EEB762650321D00C16419 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C76EEB1A264D6E6200C16419 /* ShoppingAPI */;
-			targetProxy = C76EEB26264D6E6200C16419 /* PBXContainerItemProxy */;
+			target = C76EEB692650321D00C16419 /* ProductFlow */;
+			targetProxy = C76EEB752650321D00C16419 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C76EEB2D264D6E6200C16419 /* Debug */ = {
+		C76EEB7C2650321E00C16419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,7 +335,7 @@
 			};
 			name = Debug;
 		};
-		C76EEB2E264D6E6200C16419 /* Release */ = {
+		C76EEB7D2650321E00C16419 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,7 +393,7 @@
 			};
 			name = Release;
 		};
-		C76EEB30264D6E6200C16419 /* Debug */ = {
+		C76EEB7F2650321E00C16419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -406,14 +402,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ShoppingAPI/Info.plist;
+				INFOPLIST_FILE = ProductFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ShoppingAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ProductFlow;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -422,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		C76EEB31264D6E6200C16419 /* Release */ = {
+		C76EEB802650321E00C16419 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -431,14 +427,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ShoppingAPI/Info.plist;
+				INFOPLIST_FILE = ProductFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ShoppingAPI;
+				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ProductFlow;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,36 +442,36 @@
 			};
 			name = Release;
 		};
-		C76EEB33264D6E6200C16419 /* Debug */ = {
+		C76EEB822650321E00C16419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingAPITests/Info.plist;
+				INFOPLIST_FILE = ProductFlowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ShoppingAPITests;
+				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ProductFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C76EEB34264D6E6200C16419 /* Release */ = {
+		C76EEB832650321E00C16419 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingAPITests/Info.plist;
+				INFOPLIST_FILE = ProductFlowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ShoppingAPITests;
+				PRODUCT_BUNDLE_IDENTIFIER = come.edu.ProductFlowTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,34 +481,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C76EEB15264D6E6200C16419 /* Build configuration list for PBXProject "ShoppingAPI" */ = {
+		C76EEB642650321D00C16419 /* Build configuration list for PBXProject "ProductFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C76EEB2D264D6E6200C16419 /* Debug */,
-				C76EEB2E264D6E6200C16419 /* Release */,
+				C76EEB7C2650321E00C16419 /* Debug */,
+				C76EEB7D2650321E00C16419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C76EEB2F264D6E6200C16419 /* Build configuration list for PBXNativeTarget "ShoppingAPI" */ = {
+		C76EEB7E2650321E00C16419 /* Build configuration list for PBXNativeTarget "ProductFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C76EEB30264D6E6200C16419 /* Debug */,
-				C76EEB31264D6E6200C16419 /* Release */,
+				C76EEB7F2650321E00C16419 /* Debug */,
+				C76EEB802650321E00C16419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C76EEB32264D6E6200C16419 /* Build configuration list for PBXNativeTarget "ShoppingAPITests" */ = {
+		C76EEB812650321E00C16419 /* Build configuration list for PBXNativeTarget "ProductFlowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C76EEB33264D6E6200C16419 /* Debug */,
-				C76EEB34264D6E6200C16419 /* Release */,
+				C76EEB822650321E00C16419 /* Debug */,
+				C76EEB832650321E00C16419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C76EEB12264D6E6200C16419 /* Project object */;
+	rootObject = C76EEB612650321D00C16419 /* Project object */;
 }

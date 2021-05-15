@@ -70,7 +70,7 @@
          location = "container:"
          name = "ProductFlow">
          <FileRef
-            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Flows/PrductFlow/ProductFlow.xcodeproj">
+            location = "group:../Flows/ProductFlow/ProductFlow.xcodeproj">
          </FileRef>
       </Group>
       <Group

@@ -12,6 +12,8 @@
 		C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAEB264C575D00C16419 /* ProfileUI.framework */; };
 		C76EEAED264C575D00C16419 /* ProfileUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAEB264C575D00C16419 /* ProfileUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAF1264D4A9600C16419 /* HomeFlow+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEAF0264D4A9600C16419 /* HomeFlow+FlowController.swift */; };
+		C76EEB5626502F4D00C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5526502F4D00C16419 /* PaymentUI.framework */; };
+		C76EEB5726502F4D00C16419 /* PaymentUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5526502F4D00C16419 /* PaymentUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD8372647B1EC000D447C /* HomeFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD82D2647B1EC000D447C /* HomeFlow.framework */; };
 		C7FFD83C2647B1EC000D447C /* HomeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD83B2647B1EC000D447C /* HomeFlowTests.swift */; };
 		C7FFD83E2647B1EC000D447C /* HomeFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8302647B1EC000D447C /* HomeFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,7 @@
 				C76EEAED264C575D00C16419 /* ProfileUI.framework in Embed Frameworks */,
 				C76EEAD5264C171E00C16419 /* ProductFlow.framework in Embed Frameworks */,
 				C7FFD99D2647C474000D447C /* FlowController.framework in Embed Frameworks */,
+				C76EEB5726502F4D00C16419 /* PaymentUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +57,7 @@
 		C76EEAE8264C575600C16419 /* OnboardingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAEB264C575D00C16419 /* ProfileUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProfileUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAF0264D4A9600C16419 /* HomeFlow+FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeFlow+FlowController.swift"; sourceTree = "<group>"; };
+		C76EEB5526502F4D00C16419 /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD82D2647B1EC000D447C /* HomeFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8302647B1EC000D447C /* HomeFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFlow.h; sourceTree = "<group>"; };
 		C7FFD8312647B1EC000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 				C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */,
 				C76EEAD4264C171E00C16419 /* ProductFlow.framework in Frameworks */,
 				C7FFD99C2647C474000D447C /* FlowController.framework in Frameworks */,
+				C76EEB5626502F4D00C16419 /* PaymentUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,7 @@
 		C7FFD99A2647C474000D447C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C76EEB5526502F4D00C16419 /* PaymentUI.framework */,
 				C76EEAEB264C575D00C16419 /* ProfileUI.framework */,
 				C76EEAE8264C575600C16419 /* OnboardingUI.framework */,
 				C76EEAE5264C574B00C16419 /* ProductUI.framework */,

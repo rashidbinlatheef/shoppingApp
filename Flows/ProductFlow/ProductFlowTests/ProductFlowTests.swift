@@ -1,14 +1,14 @@
 //
-//  PrductFlowTests.swift
-//  PrductFlowTests
+//  ProductFlowTests.swift
+//  ProductFlowTests
 //
-//  Created by Muhammed Rashid on 12/05/21.
+//  Created by Muhammed Rashid on 15/05/21.
 //
 
 import XCTest
-@testable import PrductFlow
+@testable import ProductFlow
 
-class PrductFlowTests: XCTestCase {
+class ProductFlowTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
