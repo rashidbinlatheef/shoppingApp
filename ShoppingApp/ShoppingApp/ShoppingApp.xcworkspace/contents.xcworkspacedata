@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "CommonModules">
+      <FileRef
+         location = "group:../../Commons/Commons/Commons.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../Networking/Networking/Networking.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../FlowController/FlowController/FlowController.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:../Modules"
+      name = "Features">
+      <Group
+         location = "group:ShoppingAPi"
+         name = "ShoppingAPI">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/ShoppingAPi/ShoppingAPI.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Payment"
+         name = "PaymentUI">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Payment/Payment/PaymentUI.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Product"
+         name = "ProductUI">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Product/ProductUI.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Profile"
+         name = "ProfileUI">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Profile/ProfileUI.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Onboarding"
+         name = "OnboardingUI">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Onboarding/OnboardingUI.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:Onboarding"
+            name = "Onboarding">
+            <FileRef
+               location = "group:Onboarding.h">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:../Flows"
+      name = "Flows">
+      <Group
+         location = "container:"
+         name = "ProductFlow">
+         <FileRef
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Flows/PrductFlow/ProductFlow.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:OnboardingFlow"
+         name = "OnboardingFlow">
+         <FileRef
+            location = "group:OnboardingFlow.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AppFlow"
+         name = "AppFlow">
+         <FileRef
+            location = "group:AppFlow.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:HomeFlow"
+         name = "HomeFlow">
+         <FileRef
+            location = "group:HomeFlow.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:ShoppingApp.xcodeproj">
+   </FileRef>
+</Workspace>
