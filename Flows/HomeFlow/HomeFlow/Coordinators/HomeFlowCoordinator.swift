@@ -33,8 +33,8 @@ class HomeFlowCoordinator: BaseFlowCoordinator {
         productsCoordinator.start()
         let (coordinator, profileVC) = ProfileUIModuleFactory.shared.profileViewController()
         coordinator.flowEventsDelegate = self
-        tabBarController.viewControllers = [productVC, profileVC]
         addChildCoordinator(coordinator)
+        tabBarController.viewControllers = [productVC, profileVC]
         router.setAsRootViewController(tabBarController, animated: true, hideNavigationBar: true)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E9185266795E000E0DB05 /* AppFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */; };
 		C7FFD8132647B1D5000D447C /* AppFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8092647B1D5000D447C /* AppFlow.framework */; };
 		C7FFD8182647B1D5000D447C /* AppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8172647B1D5000D447C /* AppFlowTests.swift */; };
 		C7FFD81A2647B1D5000D447C /* AppFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD80C2647B1D5000D447C /* AppFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +22,7 @@
 		C7FFD9822647C0DF000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9802647C0DF000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9842647C0E4000D447C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9832647C0E4000D447C /* Networking.framework */; };
 		C7FFD9852647C0E4000D447C /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9832647C0E4000D447C /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7FFD9872647C106000D447C /* AppFlowCoordinator+CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9862647C106000D447C /* AppFlowCoordinator+CoordinatorFactory.swift */; };
+		C7FFD9872647C106000D447C /* AppFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9862647C106000D447C /* AppFlow+Interfaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowModuleFactory.swift; sourceTree = "<group>"; };
 		C7FFD8092647B1D5000D447C /* AppFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD80C2647B1D5000D447C /* AppFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFlow.h; sourceTree = "<group>"; };
 		C7FFD80D2647B1D5000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		C7FFD97D2647C0C6000D447C /* OnboardingFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardingFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9802647C0DF000D447C /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9832647C0E4000D447C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FFD9862647C106000D447C /* AppFlowCoordinator+CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppFlowCoordinator+CoordinatorFactory.swift"; sourceTree = "<group>"; };
+		C7FFD9862647C106000D447C /* AppFlow+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppFlow+Interfaces.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70E9182266795C100E0DB05 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFD9702647C062000D447C /* AppFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C70E9183266795C800E0DB05 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFD9862647C106000D447C /* AppFlow+Interfaces.swift */,
+				C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		C7FFD7FF2647B1D5000D447C = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD80C2647B1D5000D447C /* AppFlow.h */,
-				C7FFD9702647C062000D447C /* AppFlowCoordinator.swift */,
-				C7FFD9862647C106000D447C /* AppFlowCoordinator+CoordinatorFactory.swift */,
+				C70E9182266795C100E0DB05 /* Coordinators */,
+				C70E9183266795C800E0DB05 /* Interfaces */,
 				C7FFD80D2647B1D5000D447C /* Info.plist */,
 			);
 			path = AppFlow;
@@ -255,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FFD9872647C106000D447C /* AppFlowCoordinator+CoordinatorFactory.swift in Sources */,
+				C7FFD9872647C106000D447C /* AppFlow+Interfaces.swift in Sources */,
 				C7FFD9712647C062000D447C /* AppFlowCoordinator.swift in Sources */,
+				C70E9185266795E000E0DB05 /* AppFlowModuleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

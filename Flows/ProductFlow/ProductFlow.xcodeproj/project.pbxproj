@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E918D2667969500E0DB05 /* ProductFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */; };
 		C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB6A2650321D00C16419 /* ProductFlow.framework */; };
 		C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB782650321D00C16419 /* ProductFlowTests.swift */; };
 		C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB6D2650321D00C16419 /* ProductFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C76EEB862650324900C16419 /* ProductFlow+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */; };
+		C76EEB862650324900C16419 /* ProductFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB842650324900C16419 /* ProductFlow+Interfaces.swift */; };
 		C76EEB872650324900C16419 /* ProductFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */; };
 		C76EEB8A2650328E00C16419 /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; };
 		C76EEB8B2650328E00C16419 /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -50,13 +51,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFlowModuleFactory.swift; sourceTree = "<group>"; };
 		C76EEB6A2650321D00C16419 /* ProductFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB6D2650321D00C16419 /* ProductFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFlow.h; sourceTree = "<group>"; };
 		C76EEB6E2650321D00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76EEB732650321D00C16419 /* ProductFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB782650321D00C16419 /* ProductFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFlowTests.swift; sourceTree = "<group>"; };
 		C76EEB7A2650321E00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductFlow+FlowController.swift"; sourceTree = "<group>"; };
+		C76EEB842650324900C16419 /* ProductFlow+Interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductFlow+Interfaces.swift"; sourceTree = "<group>"; };
 		C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFlowCoordinator.swift; sourceTree = "<group>"; };
 		C76EEB892650328E00C16419 /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB8D2650329900C16419 /* ProductUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProductUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70E918A2667966B00E0DB05 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C70E918B2667967300E0DB05 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C76EEB842650324900C16419 /* ProductFlow+Interfaces.swift */,
+				C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		C76EEB602650321D00C16419 = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				C76EEB6D2650321D00C16419 /* ProductFlow.h */,
-				C76EEB842650324900C16419 /* ProductFlow+FlowController.swift */,
-				C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */,
+				C70E918A2667966B00E0DB05 /* Coordinators */,
+				C70E918B2667967300E0DB05 /* Interfaces */,
 				C76EEB6E2650321D00C16419 /* Info.plist */,
 			);
 			path = ProductFlow;
@@ -248,7 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76EEB872650324900C16419 /* ProductFlowCoordinator.swift in Sources */,
-				C76EEB862650324900C16419 /* ProductFlow+FlowController.swift in Sources */,
+				C70E918D2667969500E0DB05 /* ProductFlowModuleFactory.swift in Sources */,
+				C76EEB862650324900C16419 /* ProductFlow+Interfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

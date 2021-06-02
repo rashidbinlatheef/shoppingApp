@@ -1,5 +1,5 @@
 //
-//  OnboardingFlow+FlowController.swift
+//  OnboardingFlow+Interfaces.swift
 //  OnboardingFlow
 //
 //  Created by Muhammed Rashid on 13/05/21.
@@ -16,14 +16,4 @@ public protocol OnboardingFlowEventDelegate: FlowEventsDelegate {
 
 public protocol OnboardingFlowModuleFactoryProtocol {
     func onboardingCoordinator(router: Routable) -> BaseFlowCoordinator
-}
-
-public class OnboardingFlowModuleFactory: OnboardingFlowModuleFactoryProtocol {
-    public static let shared = OnboardingFlowModuleFactory()
-    private init() {}
-    
-    public func onboardingCoordinator(router: Routable) -> BaseFlowCoordinator {
-        let onboardingFlowCoordinator = OnboardingFlowCoordinator(router: router)
-        return onboardingFlowCoordinator
-    }
 }

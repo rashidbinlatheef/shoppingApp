@@ -7,7 +7,6 @@
 
 import Foundation
 import FlowController
-import Networking
 import ProfileUI
 
 public enum HomeFlowEvent: FlowEvent {
@@ -26,14 +25,4 @@ public enum HomeFlowEvent: FlowEvent {
 
 public protocol HomeFlowModuleFactoryProtocol {
     func homeFlowCoordinator(router: Routable) -> BaseFlowCoordinator
-}
-
-public class HomeFlowModuleFactory: HomeFlowModuleFactoryProtocol {
-    public static let shared = HomeFlowModuleFactory()
-    private init() {}
-    
-    public func homeFlowCoordinator(router: Routable) -> BaseFlowCoordinator {
-        let homeFlowCoordinator = HomeFlowCoordinator(router: router)
-        return homeFlowCoordinator
-    }
 }

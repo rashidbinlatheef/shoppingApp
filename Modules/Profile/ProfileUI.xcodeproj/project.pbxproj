@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E91932667973F00E0DB05 /* ProfileUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */; };
 		C7FFD8C72647B27E000D447C /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8BD2647B27D000D447C /* ProfileUI.framework */; };
 		C7FFD8CC2647B27E000D447C /* ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8CB2647B27E000D447C /* ProfileUITests.swift */; };
 		C7FFD8CE2647B27E000D447C /* ProfileUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8C02647B27D000D447C /* ProfileUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FFD9922647C29B000D447C /* ProfileUI+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9912647C29B000D447C /* ProfileUI+FlowController.swift */; };
+		C7FFD9922647C29B000D447C /* ProfileUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9912647C29B000D447C /* ProfileUI+Interfaces.swift */; };
 		C7FFD9AB2647C48A000D447C /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9AA2647C48A000D447C /* FlowController.framework */; };
 		C7FFD9AC2647C48A000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9AA2647C48A000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9BF2647C87C000D447C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9BE2647C87C000D447C /* ProfileViewController.swift */; };
@@ -43,13 +44,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIModuleFactory.swift; sourceTree = "<group>"; };
 		C7FFD8BD2647B27D000D447C /* ProfileUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8C02647B27D000D447C /* ProfileUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileUI.h; sourceTree = "<group>"; };
 		C7FFD8C12647B27D000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FFD8C62647B27E000D447C /* ProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8CB2647B27E000D447C /* ProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITests.swift; sourceTree = "<group>"; };
 		C7FFD8CD2647B27E000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7FFD9912647C29B000D447C /* ProfileUI+FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileUI+FlowController.swift"; sourceTree = "<group>"; };
+		C7FFD9912647C29B000D447C /* ProfileUI+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileUI+Interfaces.swift"; sourceTree = "<group>"; };
 		C7FFD9AA2647C48A000D447C /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9BE2647C87C000D447C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C7FFD9C02647C889000D447C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -99,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD8C02647B27D000D447C /* ProfileUI.h */,
+				C7FFD9902647C289000D447C /* Interfaces */,
 				C7FFD9BD2647C85D000D447C /* ViewController */,
-				C7FFD9902647C289000D447C /* FlowInterface */,
 				C7FFD8C12647B27D000D447C /* Info.plist */,
 			);
 			path = Profile;
@@ -115,12 +117,13 @@
 			path = ProfileUITests;
 			sourceTree = "<group>";
 		};
-		C7FFD9902647C289000D447C /* FlowInterface */ = {
+		C7FFD9902647C289000D447C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C7FFD9912647C29B000D447C /* ProfileUI+FlowController.swift */,
+				C7FFD9912647C29B000D447C /* ProfileUI+Interfaces.swift */,
+				C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */,
 			);
-			path = FlowInterface;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		C7FFD9A92647C48A000D447C /* Frameworks */ = {
@@ -252,9 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E91932667973F00E0DB05 /* ProfileUIModuleFactory.swift in Sources */,
 				C7FFD9BF2647C87C000D447C /* ProfileViewController.swift in Sources */,
 				C7FFD9C92647CDFF000D447C /* ProfileCoordinator.swift in Sources */,
-				C7FFD9922647C29B000D447C /* ProfileUI+FlowController.swift in Sources */,
+				C7FFD9922647C29B000D447C /* ProfileUI+Interfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

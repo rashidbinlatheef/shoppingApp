@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E91892667964200E0DB05 /* OnboardingFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */; };
 		C76EEAE0264C572400C16419 /* OnboardingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; };
 		C76EEAE1264C572400C16419 /* OnboardingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAE3264C572900C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAE2264C572900C16419 /* PaymentUI.framework */; };
 		C76EEAE4264C572900C16419 /* PaymentUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAE2264C572900C16419 /* PaymentUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C76EEAEF264D479B00C16419 /* OnboardingFlow+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEAEE264D479B00C16419 /* OnboardingFlow+FlowController.swift */; };
+		C76EEAEF264D479B00C16419 /* OnboardingFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */; };
 		C7FFD85B2647B207000D447C /* OnboardingFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8512647B207000D447C /* OnboardingFlow.framework */; };
 		C7FFD8602647B207000D447C /* OnboardingFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD85F2647B207000D447C /* OnboardingFlowTests.swift */; };
 		C7FFD8622647B207000D447C /* OnboardingFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8542647B207000D447C /* OnboardingFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,9 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowModuleFactory.swift; sourceTree = "<group>"; };
 		C76EEADF264C572400C16419 /* OnboardingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAE2264C572900C16419 /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76EEAEE264D479B00C16419 /* OnboardingFlow+FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingFlow+FlowController.swift"; sourceTree = "<group>"; };
+		C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingFlow+Interfaces.swift"; sourceTree = "<group>"; };
 		C7FFD8512647B207000D447C /* OnboardingFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnboardingFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8542647B207000D447C /* OnboardingFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingFlow.h; sourceTree = "<group>"; };
 		C7FFD8552647B207000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70E91862667961300E0DB05 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */,
+				C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		C70E91872667961C00E0DB05 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFD9932647C3E0000D447C /* OnboardingFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		C7FFD8472647B207000D447C = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD8542647B207000D447C /* OnboardingFlow.h */,
-				C7FFD9932647C3E0000D447C /* OnboardingFlowCoordinator.swift */,
-				C76EEAEE264D479B00C16419 /* OnboardingFlow+FlowController.swift */,
+				C70E91872667961C00E0DB05 /* Coordinators */,
+				C70E91862667961300E0DB05 /* Interfaces */,
 				C7FFD8552647B207000D447C /* Info.plist */,
 			);
 			path = OnboardingFlow;
@@ -244,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEAEF264D479B00C16419 /* OnboardingFlow+FlowController.swift in Sources */,
+				C76EEAEF264D479B00C16419 /* OnboardingFlow+Interfaces.swift in Sources */,
 				C7FFD9942647C3E0000D447C /* OnboardingFlowCoordinator.swift in Sources */,
+				C70E91892667964200E0DB05 /* OnboardingFlowModuleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

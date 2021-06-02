@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E91912667970A00E0DB05 /* OnboardingUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91902667970A00E0DB05 /* OnboardingUIModuleFactory.swift */; };
 		C76EEB50264D997400C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB4F264D997400C16419 /* ShoppingAPI.framework */; };
 		C76EEB51264D997400C16419 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB4F264D997400C16419 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD87F2647B22E000D447C /* OnboardingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8752647B22E000D447C /* OnboardingUI.framework */; };
@@ -14,7 +15,7 @@
 		C7FFD8862647B22E000D447C /* OnboardingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8782647B22E000D447C /* OnboardingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7FFD98B2647C20B000D447C /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FFD9892647C20B000D447C /* SignIn.storyboard */; };
 		C7FFD98C2647C20B000D447C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD98A2647C20B000D447C /* SignInViewController.swift */; };
-		C7FFD98F2647C253000D447C /* OnboardingUI+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD98E2647C253000D447C /* OnboardingUI+FlowController.swift */; };
+		C7FFD98F2647C253000D447C /* OnboardingUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD98E2647C253000D447C /* OnboardingUI+Interfaces.swift */; };
 		C7FFD9A12647C47C000D447C /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9A02647C47C000D447C /* FlowController.framework */; };
 		C7FFD9A22647C47C000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9A02647C47C000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9B42647C73F000D447C /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9B32647C73F000D447C /* CreateAccountCoordinator.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E91902667970A00E0DB05 /* OnboardingUIModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUIModuleFactory.swift; sourceTree = "<group>"; };
 		C76EEADC264C56F800C16419 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB4F264D997400C16419 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8752647B22E000D447C /* OnboardingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnboardingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +60,7 @@
 		C7FFD8852647B22E000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FFD9892647C20B000D447C /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		C7FFD98A2647C20B000D447C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		C7FFD98E2647C253000D447C /* OnboardingUI+FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingUI+FlowController.swift"; sourceTree = "<group>"; };
+		C7FFD98E2647C253000D447C /* OnboardingUI+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingUI+Interfaces.swift"; sourceTree = "<group>"; };
 		C7FFD9A02647C47C000D447C /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9B32647C73F000D447C /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
 		C7FFD9CA2647F771000D447C /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70E918E266796E800E0DB05 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFD9892647C20B000D447C /* SignIn.storyboard */,
+				C7FFD98A2647C20B000D447C /* SignInViewController.swift */,
+				C7FFD9CC2647F8EE000D447C /* SignInCoordinator.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C70E918F266796F400E0DB05 /* Enrollment */ = {
+			isa = PBXGroup;
+			children = (
+				C7FFD9B32647C73F000D447C /* CreateAccountCoordinator.swift */,
+				C7FFD9CA2647F771000D447C /* CreateAccountViewController.swift */,
+			);
+			path = Enrollment;
+			sourceTree = "<group>";
+		};
 		C7FFD86B2647B22E000D447C = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD8782647B22E000D447C /* OnboardingUI.h */,
-				C7FFD98D2647C224000D447C /* FlowInterface */,
+				C7FFD98D2647C224000D447C /* Interfaces */,
 				C7FFD9882647C20B000D447C /* ViewControllers */,
 				C7FFD8792647B22E000D447C /* Info.plist */,
 			);
@@ -128,21 +149,19 @@
 		C7FFD9882647C20B000D447C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7FFD9892647C20B000D447C /* SignIn.storyboard */,
-				C7FFD98A2647C20B000D447C /* SignInViewController.swift */,
-				C7FFD9CC2647F8EE000D447C /* SignInCoordinator.swift */,
-				C7FFD9B32647C73F000D447C /* CreateAccountCoordinator.swift */,
-				C7FFD9CA2647F771000D447C /* CreateAccountViewController.swift */,
+				C70E918F266796F400E0DB05 /* Enrollment */,
+				C70E918E266796E800E0DB05 /* SignIn */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		C7FFD98D2647C224000D447C /* FlowInterface */ = {
+		C7FFD98D2647C224000D447C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C7FFD98E2647C253000D447C /* OnboardingUI+FlowController.swift */,
+				C7FFD98E2647C253000D447C /* OnboardingUI+Interfaces.swift */,
+				C70E91902667970A00E0DB05 /* OnboardingUIModuleFactory.swift */,
 			);
-			path = FlowInterface;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		C7FFD99F2647C47C000D447C /* Frameworks */ = {
@@ -266,7 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FFD9CB2647F771000D447C /* CreateAccountViewController.swift in Sources */,
-				C7FFD98F2647C253000D447C /* OnboardingUI+FlowController.swift in Sources */,
+				C70E91912667970A00E0DB05 /* OnboardingUIModuleFactory.swift in Sources */,
+				C7FFD98F2647C253000D447C /* OnboardingUI+Interfaces.swift in Sources */,
 				C7FFD9B42647C73F000D447C /* CreateAccountCoordinator.swift in Sources */,
 				C7FFD98C2647C20B000D447C /* SignInViewController.swift in Sources */,
 				C7FFD9CD2647F8EE000D447C /* SignInCoordinator.swift in Sources */,

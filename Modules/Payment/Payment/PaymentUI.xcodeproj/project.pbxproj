@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E917D2667935000E0DB05 /* PaymentUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E917C2667935000E0DB05 /* PaymentUIModuleFactory.swift */; };
 		C76EEB53264D99FF00C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB52264D99FF00C16419 /* ShoppingAPI.framework */; };
 		C76EEB54264D99FF00C16419 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB52264D99FF00C16419 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C48A4A264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C48A49264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift */; };
@@ -17,7 +18,7 @@
 		C7FFD9F526481B27000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F326481B27000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; };
 		C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7FFDA0026481B8B000D447C /* PaymenetUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */; };
+		C7FFDA0026481B8B000D447C /* PaymentUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymentUI+Interfaces.swift */; };
 		C7FFDA0226481BE2000D447C /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFDA0126481BE2000D447C /* UpgradeViewController.swift */; };
 		C7FFDA0426481BEC000D447C /* Upgrade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FFDA0326481BEC000D447C /* Upgrade.storyboard */; };
 		C7FFDA0626481C3E000D447C /* UpgradeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFDA0526481C3E000D447C /* UpgradeCoordinator.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C70E917C2667935000E0DB05 /* PaymentUIModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentUIModuleFactory.swift; sourceTree = "<group>"; };
 		C76EEB52264D99FF00C16419 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C48A49264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseItemsCoordinator.swift; sourceTree = "<group>"; };
 		C7FFD9D826481AFD000D447C /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +65,7 @@
 		C7FFD9F326481B27000D447C /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9F726481B2C000D447C /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9FA26481B30000D447C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymenetUI+Interfaces.swift"; sourceTree = "<group>"; };
+		C7FFD9FF26481B8B000D447C /* PaymentUI+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentUI+Interfaces.swift"; sourceTree = "<group>"; };
 		C7FFDA0126481BE2000D447C /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 		C7FFDA0326481BEC000D447C /* Upgrade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Upgrade.storyboard; sourceTree = "<group>"; };
 		C7FFDA0526481C3E000D447C /* UpgradeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeCoordinator.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FFD9DB26481AFD000D447C /* PaymentUI.h */,
-				C7FFD9FE26481B45000D447C /* FlowInterface */,
+				C7FFD9FE26481B45000D447C /* Interfaces */,
 				C7FFD9FD26481B35000D447C /* ViewController */,
 				C7FFD9DC26481AFD000D447C /* Info.plist */,
 			);
@@ -152,12 +154,13 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		C7FFD9FE26481B45000D447C /* FlowInterface */ = {
+		C7FFD9FE26481B45000D447C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */,
+				C7FFD9FF26481B8B000D447C /* PaymentUI+Interfaces.swift */,
+				C70E917C2667935000E0DB05 /* PaymentUIModuleFactory.swift */,
 			);
-			path = FlowInterface;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		C7FFDA0C264845A4000D447C /* Upgrade */ = {
@@ -293,8 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C48A4A264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift in Sources */,
+				C70E917D2667935000E0DB05 /* PaymentUIModuleFactory.swift in Sources */,
 				C7FFDA0F264845F4000D447C /* PurchaseItemsViewController.swift in Sources */,
-				C7FFDA0026481B8B000D447C /* PaymenetUI+Interfaces.swift in Sources */,
+				C7FFDA0026481B8B000D447C /* PaymentUI+Interfaces.swift in Sources */,
 				C7FFDA0226481BE2000D447C /* UpgradeViewController.swift in Sources */,
 				C7FFDA0626481C3E000D447C /* UpgradeCoordinator.swift in Sources */,
 			);
