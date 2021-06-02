@@ -11,7 +11,7 @@ import OnboardingUI
 import PaymentUI
 import ShoppingAPI
 
-class OnboardingFlowCoordinator: BaseFlowCoordinator, OnboardingUIFlowCoordinatorFactory, PaymentUIFlowCoordinatorFactory {
+class OnboardingFlowCoordinator: BaseFlowCoordinator {
     
     private var router: Routable
     
@@ -25,7 +25,7 @@ class OnboardingFlowCoordinator: BaseFlowCoordinator, OnboardingUIFlowCoordinato
     }
     
     public override func start() {
-        let (signInCoordinator, signInVC) = signInViewController(router: router)
+        let (signInCoordinator, signInVC) = OnboardingUIModuleFactory.shared.signInViewController(router: router)
         signInCoordinator.flowEventsDelegate = self
         addChildCoordinator(signInCoordinator)
         router.setAsRootViewController(signInVC)
@@ -46,7 +46,7 @@ extension OnboardingFlowCoordinator: OnboardingEventsDelegate {
     }
     
     private func startUpgradeFlow() {
-        let (upgradeCoordinator, upgradeVC) = upgradeViewController(router: router)
+        let (upgradeCoordinator, upgradeVC) = PaymentUIModuleFactory.shared.upgradeViewController(router: router)
         upgradeCoordinator.flowEventsDelegate = self
         addChildCoordinator(upgradeCoordinator)
         router.setAsRootViewController(upgradeVC)

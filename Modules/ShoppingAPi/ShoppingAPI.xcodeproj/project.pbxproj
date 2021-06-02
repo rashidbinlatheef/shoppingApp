@@ -18,6 +18,9 @@
 		C76EEB4E264D992C00C16419 /* UpgradePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4B264D992C00C16419 /* UpgradePlan.swift */; };
 		C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; };
 		C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C76EEB9F26513A9900C16419 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB9E26513A9900C16419 /* DataStorage.swift */; };
+		C76EEBA126513B7200C16419 /* PersistantStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEBA026513B7200C16419 /* PersistantStorage.swift */; };
+		C76EEBA326513F4B00C16419 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEBA226513F4B00C16419 /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		C76EEB4A264D992C00C16419 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C76EEB4B264D992C00C16419 /* UpgradePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradePlan.swift; sourceTree = "<group>"; };
 		C76EEB5826502F6C00C16419 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76EEB9E26513A9900C16419 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		C76EEBA026513B7200C16419 /* PersistantStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantStorage.swift; sourceTree = "<group>"; };
+		C76EEBA226513F4B00C16419 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */,
-				C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */,
-				C76EEB42264D990B00C16419 /* Models */,
+				C76EEB9C265138F200C16419 /* DataLayer */,
 				C76EEB1F264D6E6200C16419 /* Info.plist */,
 			);
 			path = ShoppingAPI;
@@ -137,6 +142,26 @@
 				C76EEB4B264D992C00C16419 /* UpgradePlan.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C76EEB9C265138F200C16419 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */,
+				C76EEB9D2651390200C16419 /* DataManagers */,
+				C76EEB42264D990B00C16419 /* Models */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		C76EEB9D2651390200C16419 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				C76EEB9E26513A9900C16419 /* DataStorage.swift */,
+				C76EEBA026513B7200C16419 /* PersistantStorage.swift */,
+				C76EEBA226513F4B00C16419 /* SessionManager.swift */,
+			);
+			path = DataManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76EEB9F26513A9900C16419 /* DataStorage.swift in Sources */,
 				C76EEB3B264D76D600C16419 /* ShoppingAPIClient.swift in Sources */,
 				C76EEB4C264D992C00C16419 /* Product.swift in Sources */,
 				C76EEB4D264D992C00C16419 /* User.swift in Sources */,
+				C76EEBA126513B7200C16419 /* PersistantStorage.swift in Sources */,
 				C76EEB4E264D992C00C16419 /* UpgradePlan.swift in Sources */,
+				C76EEBA326513F4B00C16419 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

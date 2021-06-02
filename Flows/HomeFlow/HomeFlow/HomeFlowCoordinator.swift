@@ -13,10 +13,10 @@ import PaymentUI
 import ShoppingAPI
 import ProductFlow
 
-class HomeFlowCoordinator: BaseFlowCoordinator, ProfileUIFlowCoordinatorFactory, PaymentUIFlowCoordinatorFactory, ProductFlowCoordinatorFactory {
+class HomeFlowCoordinator: BaseFlowCoordinator {
     private var tabBarController = UITabBarController()
     private var router: Routable
-   
+    
     public init(router: Routable) {
         self.router = router
         super.init()
@@ -27,11 +27,11 @@ class HomeFlowCoordinator: BaseFlowCoordinator, ProfileUIFlowCoordinatorFactory,
     }
     
     public override func start() {
-        let (productsCoordinator, productVC) = productFlowCoordinator()
+        let (productsCoordinator, productVC) = ProductFlowModuleFactory.shared.productFlowCoordinator()
         productsCoordinator.flowEventsDelegate = self
         addChildCoordinator(productsCoordinator)
         productsCoordinator.start()
-        let (coordinator, profileVC) = profileViewController()
+        let (coordinator, profileVC) = ProfileUIModuleFactory.shared.profileViewController()
         coordinator.flowEventsDelegate = self
         tabBarController.viewControllers = [productVC, profileVC]
         addChildCoordinator(coordinator)

@@ -11,7 +11,7 @@ import ShoppingAPI
 import ProductUI
 import PaymentUI
 
-class ProductFlowCoordinator: BaseFlowCoordinator, ProductUIFlowCoordinatorFactory, PaymentUIFlowCoordinatorFactory {
+class ProductFlowCoordinator: BaseFlowCoordinator {
     var router: Routable
     
     init(router: Routable) {
@@ -20,7 +20,7 @@ class ProductFlowCoordinator: BaseFlowCoordinator, ProductUIFlowCoordinatorFacto
     }
     
     override func start() {
-        let (productCoordinator, productListVC) = productsListViewController(router: router)
+        let (productCoordinator, productListVC) = ProductUIModuleFactory.shared.productsListViewController(router: router)
         productCoordinator.flowEventsDelegate = self
         addChildCoordinator(productCoordinator)
         router.setAsRootViewController(productListVC, hideNavigationBar: false)
@@ -29,7 +29,7 @@ class ProductFlowCoordinator: BaseFlowCoordinator, ProductUIFlowCoordinatorFacto
 
 extension ProductFlowCoordinator: ProductUIEventsDelegate {
     public func purchase(_ product: Product, quantity: Int, flowCoordinator: BaseFlowCoordinator) {
-        let purchaseCoordinator = purchaseProductCoordinator(router: router, product: product, quantity: quantity)
+        let purchaseCoordinator = PaymentUIModuleFactory.shared.purchaseProductCoordinator(router: router, product: product, quantity: quantity)
         purchaseCoordinator.flowEventsDelegate = self
         purchaseCoordinator.start()
         addChildCoordinator(purchaseCoordinator)

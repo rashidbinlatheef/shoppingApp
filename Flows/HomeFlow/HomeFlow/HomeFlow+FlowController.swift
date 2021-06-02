@@ -11,7 +11,6 @@ import Networking
 import ProfileUI
 
 public enum HomeFlowEvent: FlowEvent {
-    case completed
     case logoutUser
 
     static func eventFor(_ event: FlowEvent) -> FlowEvent? {
@@ -25,14 +24,16 @@ public enum HomeFlowEvent: FlowEvent {
     }
 }
 
-public protocol HomeFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol HomeFlowModuleFactoryProtocol {
     func homeFlowCoordinator(router: Routable) -> BaseFlowCoordinator
 }
 
-public extension HomeFlowCoordinatorFactory {
-    func homeFlowCoordinator(router: Routable) -> BaseFlowCoordinator {
+public class HomeFlowModuleFactory: HomeFlowModuleFactoryProtocol {
+    public static let shared = HomeFlowModuleFactory()
+    private init() {}
+    
+    public func homeFlowCoordinator(router: Routable) -> BaseFlowCoordinator {
         let homeFlowCoordinator = HomeFlowCoordinator(router: router)
         return homeFlowCoordinator
     }
 }
-

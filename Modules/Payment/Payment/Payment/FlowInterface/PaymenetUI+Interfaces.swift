@@ -1,5 +1,5 @@
 //
-//  PaymenetUI+FlowController.swift
+//  PaymenetUI+Interfaces.swift
 //  Payment
 //
 //  Created by Muhammed Rashid on 09/05/21.
@@ -29,19 +29,22 @@ public extension PaymentUIEventsDelegate {
     func didFailPurchaseProduct(product: Product, error: Error, flowCoordinator: BaseFlowCoordinator) {}
 }
 
-public protocol PaymentUIFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol PaymentUIModuleFactoryProtocol {
     func upgradeViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController)
     func purchaseProductCoordinator(router: Routable, product: Product, quantity: Int) -> BaseFlowCoordinator
 }
 
-public extension PaymentUIFlowCoordinatorFactory {
-    func upgradeViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
+public class PaymentUIModuleFactory: PaymentUIModuleFactoryProtocol {
+    public static let shared = PaymentUIModuleFactory()
+    private init() {}
+    
+    public func upgradeViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
         let upgradeCoordinator = UpgradeCoordinator(router: router)
         let upgradeVC = UpgradeViewController.viewController(coordinator: upgradeCoordinator)
         return (upgradeCoordinator, upgradeVC)
     }
     
-    func purchaseProductCoordinator(router: Routable, product: Product, quantity: Int) -> BaseFlowCoordinator {
+    public func purchaseProductCoordinator(router: Routable, product: Product, quantity: Int) -> BaseFlowCoordinator {
         let purchaseCoordinator = PurchaseItemsCoordinator(router: router, product: product, quantity: quantity)
         return purchaseCoordinator
     }

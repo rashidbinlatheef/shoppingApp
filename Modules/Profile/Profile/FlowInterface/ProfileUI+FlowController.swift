@@ -15,12 +15,15 @@ public enum ProfileUIEvent: FlowEvent {
     case logoutUser
 }
 
-public protocol ProfileUIFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol ProfileModuleFactoryProtocol {
     func profileViewController() -> (BaseFlowCoordinator, UIViewController)
 }
 
-public extension ProfileUIFlowCoordinatorFactory {
-    func profileViewController() -> (BaseFlowCoordinator, UIViewController) {
+public class ProfileUIModuleFactory: ProfileModuleFactoryProtocol {
+    public static let shared = ProfileUIModuleFactory()
+    private init() {}
+    
+    public func profileViewController() -> (BaseFlowCoordinator, UIViewController) {
         let profileCoordinator = ProfileCoordinator()
         let profileVC = ProfileViewController.viewController(coordinator: profileCoordinator)
         return (profileCoordinator, profileVC)

@@ -12,7 +12,7 @@ import HomeFlow
 import OnboardingFlow
 import ShoppingAPI
 
-public class AppFlowCoordinator: BaseFlowCoordinator, HomeFlowCoordinatorFactory, OnboardingFlowCoordinatorFactory {
+class AppFlowCoordinator: BaseFlowCoordinator {
     private var router: Routable
     
     public init?(window: UIWindow?) {
@@ -26,9 +26,8 @@ public class AppFlowCoordinator: BaseFlowCoordinator, HomeFlowCoordinatorFactory
         super.init()
     }
     
-    public override func start() {
-        // If User Has Onboarded
-        let hasValidUserSession = false
+    override func start() {
+        let hasValidUserSession =  SessionManager.sharedInstance.isUserLoggedIn
         if hasValidUserSession {
             startHomeFlow()
         }
@@ -37,7 +36,7 @@ public class AppFlowCoordinator: BaseFlowCoordinator, HomeFlowCoordinatorFactory
         }
     }
     
-    public override func handleEvent(_ event: FlowEvent, flowCoordinator: FlowCoordinator) {
+    override func handleEvent(_ event: FlowEvent, flowCoordinator: FlowCoordinator) {
         if let event = event as? HomeFlowEvent {
             handleHomeEvents(event: event, coordinator: flowCoordinator)
         }
@@ -46,14 +45,14 @@ public class AppFlowCoordinator: BaseFlowCoordinator, HomeFlowCoordinatorFactory
 
 extension AppFlowCoordinator {
     private func startHomeFlow() {
-        let homeFlowCoordinator = homeFlowCoordinator(router: router)
+        let homeFlowCoordinator = HomeFlowModuleFactory.shared.homeFlowCoordinator(router: router)
         homeFlowCoordinator.flowEventsDelegate = self
         homeFlowCoordinator.start()
         addChildCoordinator(homeFlowCoordinator)
     }
     
     private func startOnboardingFlow() {
-        let onboardingFlowCoordinator = onboardingCoordinator(router: router)
+        let onboardingFlowCoordinator = OnboardingFlowModuleFactory.shared.onboardingCoordinator(router: router)
         onboardingFlowCoordinator.flowEventsDelegate = self
         onboardingFlowCoordinator.start()
         addChildCoordinator(onboardingFlowCoordinator)
@@ -61,10 +60,8 @@ extension AppFlowCoordinator {
     
     private func handleHomeEvents(event: HomeFlowEvent, coordinator: FlowCoordinator) {
         switch event {
-        case .completed:
-            startOnboardingFlow()
-            removeChildCoordinator(coordinator)
         case .logoutUser:
+            SessionManager.sharedInstance.isUserLoggedIn = false
             startOnboardingFlow()
             removeChildCoordinator(coordinator)
         }
@@ -72,21 +69,19 @@ extension AppFlowCoordinator {
 }
 
 extension AppFlowCoordinator: OnboardingFlowEventDelegate {
-    public func didSignInUser(user: User, flowCoordinator: BaseFlowCoordinator) {
-        startHomeFlow()
+    func didSignInUser(user: User, flowCoordinator: BaseFlowCoordinator) {
+        handleUserSignIn()
         removeChildCoordinator(flowCoordinator)
     }
     
-    public func didCreateUserAccount(user: User, flowCoordinator: BaseFlowCoordinator, upgradePlan: UpgradePlan?) {
-        startHomeFlow()
+    func didCreateUserAccount(user: User, flowCoordinator: BaseFlowCoordinator, upgradePlan: UpgradePlan?) {
+        handleUserSignIn()
         removeChildCoordinator(flowCoordinator)
+    }
+    
+    private func handleUserSignIn() {
+        SessionManager.sharedInstance.isUserLoggedIn = true
+        startHomeFlow()
     }
 }
 
-//TODO:
-// 4. Add Payment events delegate in payment flow
-// 5. If needed add payment flow delegate in homeflow(is not needed right now)
-// 6. Create persistance store for storing isUserLogedin, has upgaraded -
-// 7. Add upgrade button in profile screen
-// 8. move networking module to common
-// 9. Add app specific network layer

@@ -17,12 +17,15 @@ public protocol OnboardingEventsDelegate: FlowEventsDelegate {
 
 public enum OnboardingUIEvent: FlowEvent {}
 
-public protocol OnboardingUIFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol OnboardingUIModuleFactoryProtocol {
     func signInViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController)
 }
 
-public extension OnboardingUIFlowCoordinatorFactory {
-    func signInViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
+public class OnboardingUIModuleFactory: OnboardingUIModuleFactoryProtocol {
+    public static let shared = OnboardingUIModuleFactory()
+    private init() {}
+
+    public func signInViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
         let signInCoordinator = SignInCoordinator(router: router)
         let signInVC = SignInViewController.viewController(coordinator: signInCoordinator)
         return (signInCoordinator, signInVC)

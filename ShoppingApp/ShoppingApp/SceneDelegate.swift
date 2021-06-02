@@ -9,9 +9,9 @@ import UIKit
 import AppFlow
 import FlowController
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate, AppFlowCoordinatorFactory {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    private lazy var appFlowCoordinator = appCoordinator(window: window)
+    private lazy var appFlowCoordinator = AppFlowModuleFactory.shared.appCoordinator(window: window)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

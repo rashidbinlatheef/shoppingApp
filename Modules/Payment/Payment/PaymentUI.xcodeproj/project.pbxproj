@@ -17,7 +17,7 @@
 		C7FFD9F526481B27000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F326481B27000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; };
 		C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7FFDA0026481B8B000D447C /* PaymenetUI+FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymenetUI+FlowController.swift */; };
+		C7FFDA0026481B8B000D447C /* PaymenetUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */; };
 		C7FFDA0226481BE2000D447C /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFDA0126481BE2000D447C /* UpgradeViewController.swift */; };
 		C7FFDA0426481BEC000D447C /* Upgrade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FFDA0326481BEC000D447C /* Upgrade.storyboard */; };
 		C7FFDA0626481C3E000D447C /* UpgradeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFDA0526481C3E000D447C /* UpgradeCoordinator.swift */; };
@@ -63,7 +63,7 @@
 		C7FFD9F326481B27000D447C /* FlowController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9F726481B2C000D447C /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD9FA26481B30000D447C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FFD9FF26481B8B000D447C /* PaymenetUI+FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymenetUI+FlowController.swift"; sourceTree = "<group>"; };
+		C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymenetUI+Interfaces.swift"; sourceTree = "<group>"; };
 		C7FFDA0126481BE2000D447C /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 		C7FFDA0326481BEC000D447C /* Upgrade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Upgrade.storyboard; sourceTree = "<group>"; };
 		C7FFDA0526481C3E000D447C /* UpgradeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeCoordinator.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		C7FFD9FE26481B45000D447C /* FlowInterface */ = {
 			isa = PBXGroup;
 			children = (
-				C7FFD9FF26481B8B000D447C /* PaymenetUI+FlowController.swift */,
+				C7FFD9FF26481B8B000D447C /* PaymenetUI+Interfaces.swift */,
 			);
 			path = FlowInterface;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			files = (
 				C7C48A4A264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift in Sources */,
 				C7FFDA0F264845F4000D447C /* PurchaseItemsViewController.swift in Sources */,
-				C7FFDA0026481B8B000D447C /* PaymenetUI+FlowController.swift in Sources */,
+				C7FFDA0026481B8B000D447C /* PaymenetUI+Interfaces.swift in Sources */,
 				C7FFDA0226481BE2000D447C /* UpgradeViewController.swift in Sources */,
 				C7FFDA0626481C3E000D447C /* UpgradeCoordinator.swift in Sources */,
 			);

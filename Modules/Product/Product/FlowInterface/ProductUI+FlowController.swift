@@ -14,12 +14,15 @@ public protocol ProductUIEventsDelegate: FlowEventsDelegate {
     func purchase(_ product: Product, quantity: Int, flowCoordinator:  BaseFlowCoordinator)
 }
 
-public protocol ProductUIFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol ProductUIModuleFactoryProtocol {
     func productsListViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController)
 }
 
-public extension ProductUIFlowCoordinatorFactory {
-    func productsListViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
+public class ProductUIModuleFactory: ProductUIModuleFactoryProtocol {
+    public static let shared = ProductUIModuleFactory()
+    private init() {}
+    
+    public func productsListViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController) {
         let productsCoordinator = ProductsCoordinator(router: router)
         let productsListVC = ProductsListViewController.viewController(coordinator: productsCoordinator)
         return (productsCoordinator, productsListVC)

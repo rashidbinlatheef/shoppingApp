@@ -13,10 +13,10 @@ class PurchaseItemsCoordinator: BaseFlowCoordinator {
     private var product: Product
     private var quantity: Int = 0
     
-    var paymentUIEventsDelegate: PaymentUIEventsDelegate?  {
+    var paymentUIEventsDelegate: PaymentUIEventsDelegate? {
         (flowEventsDelegate as? PaymentUIEventsDelegate)
     }
-    
+   
     public init(router: Routable, product: Product, quantity: Int) {
         self.router = router
         self.product = product

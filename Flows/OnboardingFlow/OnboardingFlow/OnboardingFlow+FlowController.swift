@@ -14,12 +14,15 @@ public protocol OnboardingFlowEventDelegate: FlowEventsDelegate {
     func didCreateUserAccount(user: User, flowCoordinator: BaseFlowCoordinator, upgradePlan: UpgradePlan?)
 }
 
-public protocol OnboardingFlowCoordinatorFactory: FlowCoordinatorFactory {
+public protocol OnboardingFlowModuleFactoryProtocol {
     func onboardingCoordinator(router: Routable) -> BaseFlowCoordinator
 }
 
-public extension OnboardingFlowCoordinatorFactory {
-    func onboardingCoordinator(router: Routable) -> BaseFlowCoordinator {
+public class OnboardingFlowModuleFactory: OnboardingFlowModuleFactoryProtocol {
+    public static let shared = OnboardingFlowModuleFactory()
+    private init() {}
+    
+    public func onboardingCoordinator(router: Routable) -> BaseFlowCoordinator {
         let onboardingFlowCoordinator = OnboardingFlowCoordinator(router: router)
         return onboardingFlowCoordinator
     }
