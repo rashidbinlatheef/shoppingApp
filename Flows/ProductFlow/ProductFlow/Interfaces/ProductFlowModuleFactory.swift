@@ -17,6 +17,10 @@ public class ProductFlowModuleFactory: ProductFlowModuleFactoryProtocol {
         let productFlowNavVC = UINavigationController()
         let productFlowRouter = Router(productFlowNavVC)
         let productCoordinator = ProductFlowCoordinator(router: productFlowRouter)
+        // Initialise the tbar bar items
+        
+        let productsTabBarItem = UITabBarItem(title: "Products", image: UIImage(named: "products", in: Bundle(for: Self.self), compatibleWith: .none), tag: 0)
+        productFlowNavVC.tabBarItem = productsTabBarItem
         return (productCoordinator, productFlowNavVC)
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70E918D2667969500E0DB05 /* ProductFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */; };
+		C70E91982667BBAF00E0DB05 /* ProductsFlow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */; };
 		C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB6A2650321D00C16419 /* ProductFlow.framework */; };
 		C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB782650321D00C16419 /* ProductFlowTests.swift */; };
 		C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB6D2650321D00C16419 /* ProductFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFlowModuleFactory.swift; sourceTree = "<group>"; };
+		C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductsFlow.xcassets; sourceTree = "<group>"; };
 		C76EEB6A2650321D00C16419 /* ProductFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB6D2650321D00C16419 /* ProductFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFlow.h; sourceTree = "<group>"; };
 		C76EEB6E2650321D00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		C70E91962667BB9600E0DB05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C76EEB602650321D00C16419 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 				C76EEB6D2650321D00C16419 /* ProductFlow.h */,
 				C70E918A2667966B00E0DB05 /* Coordinators */,
 				C70E918B2667967300E0DB05 /* Interfaces */,
+				C70E91962667BB9600E0DB05 /* Resources */,
 				C76EEB6E2650321D00C16419 /* Info.plist */,
 			);
 			path = ProductFlow;
@@ -249,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E91982667BBAF00E0DB05 /* ProductsFlow.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

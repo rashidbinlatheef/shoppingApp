@@ -19,8 +19,6 @@ class ProductsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBarItem.title = "Products"
         // Do any additional setup after loading the view.
     }
 }
