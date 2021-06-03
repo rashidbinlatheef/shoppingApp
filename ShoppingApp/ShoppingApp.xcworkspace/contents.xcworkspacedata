@@ -15,7 +15,7 @@
          location = "group:Payment"
          name = "PaymentUI">
          <FileRef
-            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Payment/Payment/PaymentUI.xcodeproj">
+            location = "group:PaymentUI.xcodeproj">
          </FileRef>
       </Group>
       <Group
