@@ -1,6 +1,6 @@
 //
 //  SignInCoordinator.swift
-//  Onboarding
+//  VisitorUI
 //
 //  Created by Muhammed Rashid on 09/05/21.
 //

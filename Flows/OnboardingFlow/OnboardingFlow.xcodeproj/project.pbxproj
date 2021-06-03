@@ -10,8 +10,8 @@
 		C70E91892667964200E0DB05 /* OnboardingFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */; };
 		C70E91B62668BE9400E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B52668BE9400E0DB05 /* Commons.framework */; };
 		C70E91B72668BE9400E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B52668BE9400E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C76EEAE0264C572400C16419 /* OnboardingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; };
-		C76EEAE1264C572400C16419 /* OnboardingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E91E52668C66C00E0DB05 /* VisitorUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91E42668C66C00E0DB05 /* VisitorUI.framework */; };
+		C70E91E62668C66C00E0DB05 /* VisitorUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91E42668C66C00E0DB05 /* VisitorUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAE3264C572900C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAE2264C572900C16419 /* PaymentUI.framework */; };
 		C76EEAE4264C572900C16419 /* PaymentUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAE2264C572900C16419 /* PaymentUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAEF264D479B00C16419 /* OnboardingFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */; };
@@ -38,8 +38,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C76EEAE1264C572400C16419 /* OnboardingUI.framework in Embed Frameworks */,
 				C76EEAE4264C572900C16419 /* PaymentUI.framework in Embed Frameworks */,
+				C70E91E62668C66C00E0DB05 /* VisitorUI.framework in Embed Frameworks */,
 				C70E91B72668BE9400E0DB05 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,6 +50,7 @@
 /* Begin PBXFileReference section */
 		C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowModuleFactory.swift; sourceTree = "<group>"; };
 		C70E91B52668BE9400E0DB05 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70E91E42668C66C00E0DB05 /* VisitorUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VisitorUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEADF264C572400C16419 /* OnboardingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAE2264C572900C16419 /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingFlow+Interfaces.swift"; sourceTree = "<group>"; };
@@ -70,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEAE0264C572400C16419 /* OnboardingUI.framework in Frameworks */,
 				C76EEAE3264C572900C16419 /* PaymentUI.framework in Frameworks */,
+				C70E91E52668C66C00E0DB05 /* VisitorUI.framework in Frameworks */,
 				C70E91B62668BE9400E0DB05 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +147,7 @@
 		C7FFD9952647C46A000D447C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C70E91E42668C66C00E0DB05 /* VisitorUI.framework */,
 				C70E91B52668BE9400E0DB05 /* Commons.framework */,
 				C76EEAE2264C572900C16419 /* PaymentUI.framework */,
 				C76EEADF264C572400C16419 /* OnboardingUI.framework */,

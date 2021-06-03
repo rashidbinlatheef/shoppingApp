@@ -1,14 +1,14 @@
 //
-//  OnboardingUITests.swift
-//  OnboardingUITests
+//  VisitorUITests.swift
+//  VisitorUITests
 //
-//  Created by Muhammed Rashid on 09/05/21.
+//  Created by Muhammed Rashid on 03/06/21.
 //
 
 import XCTest
-@testable import Onboarding
+@testable import VisitorUI
 
-class OnboardingUITests: XCTestCase {
+class VisitorUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

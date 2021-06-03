@@ -1,6 +1,6 @@
 //
 //  SignInCoordinator.swift
-//  Onboarding
+//  VisitorUI
 //
 //  Created by Muhammed Rashid on 09/05/21.
 //
@@ -38,12 +38,12 @@ class SignInCoordinator: BaseFlowCoordinator {
     
     func signInUser(_ username: String?, password: String?) {
         // Do the network calls and on success pass to delegate
-        (flowEventsDelegate as? OnboardingEventsDelegate)?.didSignInUser(user: User.dummy, flowCoordinator: self)
+        (flowEventsDelegate as? VisitorUIEventsDelegate)?.didSignInUser(user: User.dummy, flowCoordinator: self)
     }
 }
 
 extension SignInCoordinator: CreateAccountCoordinatorProtocol {
     func didCreateUserAccount(user: User, flowCoordinator: BaseFlowCoordinator) {
-        (flowEventsDelegate as? OnboardingEventsDelegate)?.didCreateUserAccount(user: user, flowCoordinator: self)
+        (flowEventsDelegate as? VisitorUIEventsDelegate)?.didCreateUserAccount(user: user, flowCoordinator: self)
     }
 }
