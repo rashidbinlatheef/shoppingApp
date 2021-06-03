@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FlowController
+import Commons
 
 class SignInViewController: UIViewController {
     enum event: FlowEvent {

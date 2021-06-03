@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import FlowController
+import Commons
 
 public class OnboardingUIModuleFactory: OnboardingUIModuleFactoryProtocol {
     public static let shared = OnboardingUIModuleFactory()

@@ -10,8 +10,6 @@
 		C76EEB25264D6E6200C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */; };
 		C76EEB2A264D6E6200C16419 /* ShoppingAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB29264D6E6200C16419 /* ShoppingAPITests.swift */; };
 		C76EEB2C264D6E6200C16419 /* ShoppingAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C76EEB37264D6EBD00C16419 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB36264D6EBD00C16419 /* Networking.framework */; };
-		C76EEB38264D6EBD00C16419 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB36264D6EBD00C16419 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEB3B264D76D600C16419 /* ShoppingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB3A264D76D600C16419 /* ShoppingAPIClient.swift */; };
 		C76EEB4C264D992C00C16419 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB49264D992C00C16419 /* Product.swift */; };
 		C76EEB4D264D992C00C16419 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4A264D992C00C16419 /* User.swift */; };
@@ -40,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C76EEB38264D6EBD00C16419 /* Networking.framework in Embed Frameworks */,
 				C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB37264D6EBD00C16419 /* Networking.framework in Frameworks */,
 				C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

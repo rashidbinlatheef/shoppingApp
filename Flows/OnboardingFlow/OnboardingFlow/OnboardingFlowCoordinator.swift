@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FlowController
+import Commons
 import OnboardingUI
 import PaymentUI
 import ShoppingAPI

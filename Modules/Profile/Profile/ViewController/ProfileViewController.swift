@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FlowController
+import Commons
 
 enum ProfileViewEvent: FlowEvent{
     case logoutButtonTapped

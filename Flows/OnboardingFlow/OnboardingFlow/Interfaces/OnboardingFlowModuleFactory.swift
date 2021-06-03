@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FlowController
+import Commons
 
 public class OnboardingFlowModuleFactory: OnboardingFlowModuleFactoryProtocol {
     public static let shared = OnboardingFlowModuleFactory()

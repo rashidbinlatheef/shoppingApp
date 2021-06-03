@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C70E91892667964200E0DB05 /* OnboardingFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */; };
+		C70E91B62668BE9400E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B52668BE9400E0DB05 /* Commons.framework */; };
+		C70E91B72668BE9400E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B52668BE9400E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAE0264C572400C16419 /* OnboardingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; };
 		C76EEAE1264C572400C16419 /* OnboardingUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEADF264C572400C16419 /* OnboardingUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAE3264C572900C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAE2264C572900C16419 /* PaymentUI.framework */; };
@@ -17,8 +19,6 @@
 		C7FFD8602647B207000D447C /* OnboardingFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD85F2647B207000D447C /* OnboardingFlowTests.swift */; };
 		C7FFD8622647B207000D447C /* OnboardingFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8542647B207000D447C /* OnboardingFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7FFD9942647C3E0000D447C /* OnboardingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9932647C3E0000D447C /* OnboardingFlowCoordinator.swift */; };
-		C7FFD9972647C46A000D447C /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9962647C46A000D447C /* FlowController.framework */; };
-		C7FFD9982647C46A000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9962647C46A000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C7FFD9982647C46A000D447C /* FlowController.framework in Embed Frameworks */,
 				C76EEAE1264C572400C16419 /* OnboardingUI.framework in Embed Frameworks */,
 				C76EEAE4264C572900C16419 /* PaymentUI.framework in Embed Frameworks */,
+				C70E91B72668BE9400E0DB05 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		C70E91882667964200E0DB05 /* OnboardingFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowModuleFactory.swift; sourceTree = "<group>"; };
+		C70E91B52668BE9400E0DB05 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEADF264C572400C16419 /* OnboardingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OnboardingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAE2264C572900C16419 /* PaymentUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEAEE264D479B00C16419 /* OnboardingFlow+Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingFlow+Interfaces.swift"; sourceTree = "<group>"; };
@@ -69,9 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FFD9972647C46A000D447C /* FlowController.framework in Frameworks */,
 				C76EEAE0264C572400C16419 /* OnboardingUI.framework in Frameworks */,
 				C76EEAE3264C572900C16419 /* PaymentUI.framework in Frameworks */,
+				C70E91B62668BE9400E0DB05 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +146,7 @@
 		C7FFD9952647C46A000D447C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C70E91B52668BE9400E0DB05 /* Commons.framework */,
 				C76EEAE2264C572900C16419 /* PaymentUI.framework */,
 				C76EEADF264C572400C16419 /* OnboardingUI.framework */,
 				C7FFDA0726481E0E000D447C /* Payment.framework */,

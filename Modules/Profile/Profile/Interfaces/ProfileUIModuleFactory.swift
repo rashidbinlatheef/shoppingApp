@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FlowController
+import Commons
 import UIKit
 
 public class ProfileUIModuleFactory: ProfileModuleFactoryProtocol {
