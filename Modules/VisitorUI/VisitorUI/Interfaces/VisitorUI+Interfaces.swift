@@ -1,6 +1,6 @@
 //
-//  OnboardingUI+Interfaces.swift
-//  Onboarding
+//  VisitorUI+Interfaces.swift
+//  VisitorUI
 //
 //  Created by Muhammed Rashid on 09/05/21.
 //
@@ -10,14 +10,14 @@ import UIKit
 import Commons
 import ShoppingAPI
 
-public protocol OnboardingEventsDelegate: FlowEventsDelegate {
+public protocol VisitorUIEventsDelegate: FlowEventsDelegate {
     func didSignInUser(user: User, flowCoordinator: BaseFlowCoordinator)
     func didCreateUserAccount(user: User, flowCoordinator: BaseFlowCoordinator)
 }
 
-public enum OnboardingUIEvent: FlowEvent {}
+public enum VisitorUIEvent: FlowEvent {}
 
-public protocol OnboardingUIModuleFactoryProtocol {
+public protocol VisitorUIModuleFactoryProtocol {
     func signInViewController(router: Routable) -> (BaseFlowCoordinator, UIViewController)
 }
 

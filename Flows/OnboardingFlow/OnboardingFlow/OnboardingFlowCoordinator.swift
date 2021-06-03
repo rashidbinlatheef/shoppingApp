@@ -7,7 +7,7 @@
 
 import Foundation
 import Commons
-import OnboardingUI
+import VisitorUI
 import PaymentUI
 import ShoppingAPI
 
@@ -25,7 +25,7 @@ class OnboardingFlowCoordinator: BaseFlowCoordinator {
     }
     
     public override func start() {
-        let (signInCoordinator, signInVC) = OnboardingUIModuleFactory.shared.signInViewController(router: router)
+        let (signInCoordinator, signInVC) = VisitorUIModuleFactory.shared.signInViewController(router: router)
         signInCoordinator.flowEventsDelegate = self
         addChildCoordinator(signInCoordinator)
         router.setAsRootViewController(signInVC)
@@ -34,7 +34,7 @@ class OnboardingFlowCoordinator: BaseFlowCoordinator {
     public override func handleEvent(_ event: FlowEvent, flowCoordinator: FlowCoordinator) {}
 }
 
-extension OnboardingFlowCoordinator: OnboardingEventsDelegate {
+extension OnboardingFlowCoordinator: VisitorUIEventsDelegate {
     public func didSignInUser(user: User, flowCoordinator: BaseFlowCoordinator) {
         (flowEventsDelegate as? OnboardingFlowEventDelegate)?.didSignInUser(user: user, flowCoordinator: self)
     }

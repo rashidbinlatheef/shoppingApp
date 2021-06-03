@@ -12,13 +12,6 @@
       location = "group:../Modules"
       name = "Features">
       <Group
-         location = "group:ShoppingAPi"
-         name = "ShoppingAPI">
-         <FileRef
-            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/ShoppingAPi/ShoppingAPI.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
          location = "group:Payment"
          name = "PaymentUI">
          <FileRef
@@ -40,30 +33,23 @@
          </FileRef>
       </Group>
       <Group
-         location = "group:Onboarding"
-         name = "OnboardingUI">
+         location = "group:ShoppingAPi"
+         name = "ShoppingAPI">
          <FileRef
-            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Onboarding/OnboardingUI.xcodeproj">
+            location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/ShoppingAPi/ShoppingAPI.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "VisitorUI">
+         <FileRef
+            location = "group:../Modules/VisitorUI/VisitorUI.xcodeproj">
          </FileRef>
       </Group>
    </Group>
    <Group
       location = "group:../Flows"
       name = "Flows">
-      <Group
-         location = "container:"
-         name = "ProductFlow">
-         <FileRef
-            location = "group:../Flows/ProductFlow/ProductFlow.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:OnboardingFlow"
-         name = "OnboardingFlow">
-         <FileRef
-            location = "group:OnboardingFlow.xcodeproj">
-         </FileRef>
-      </Group>
       <Group
          location = "group:AppFlow"
          name = "AppFlow">
@@ -76,6 +62,20 @@
          name = "HomeFlow">
          <FileRef
             location = "group:HomeFlow.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:OnboardingFlow"
+         name = "OnboardingFlow">
+         <FileRef
+            location = "group:OnboardingFlow.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "ProductFlow">
+         <FileRef
+            location = "group:../Flows/ProductFlow/ProductFlow.xcodeproj">
          </FileRef>
       </Group>
    </Group>
