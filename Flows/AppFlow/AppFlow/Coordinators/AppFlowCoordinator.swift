@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import FlowController
+import Commons
 import HomeFlow
 import OnboardingFlow
 import ShoppingAPI

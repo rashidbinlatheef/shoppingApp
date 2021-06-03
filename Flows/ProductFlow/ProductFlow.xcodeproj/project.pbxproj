@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C70E918D2667969500E0DB05 /* ProductFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */; };
 		C70E91982667BBAF00E0DB05 /* ProductsFlow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */; };
+		C70E91B32668BE8A00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B22668BE8A00E0DB05 /* Commons.framework */; };
+		C70E91B42668BE8A00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B22668BE8A00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB6A2650321D00C16419 /* ProductFlow.framework */; };
 		C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB782650321D00C16419 /* ProductFlowTests.swift */; };
 		C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB6D2650321D00C16419 /* ProductFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76EEB862650324900C16419 /* ProductFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB842650324900C16419 /* ProductFlow+Interfaces.swift */; };
 		C76EEB872650324900C16419 /* ProductFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB852650324900C16419 /* ProductFlowCoordinator.swift */; };
-		C76EEB8A2650328E00C16419 /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; };
-		C76EEB8B2650328E00C16419 /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB892650328E00C16419 /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEB8E2650329900C16419 /* ProductUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB8D2650329900C16419 /* ProductUI.framework */; };
 		C76EEB8F2650329900C16419 /* ProductUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB8D2650329900C16419 /* ProductUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEB912650329E00C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB902650329E00C16419 /* PaymentUI.framework */; };
@@ -42,7 +42,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76EEB8F2650329900C16419 /* ProductUI.framework in Embed Frameworks */,
-				C76EEB8B2650328E00C16419 /* FlowController.framework in Embed Frameworks */,
+				C70E91B42668BE8A00E0DB05 /* Commons.framework in Embed Frameworks */,
 				C76EEB922650329E00C16419 /* PaymentUI.framework in Embed Frameworks */,
 				C76EEB95265032A400C16419 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
@@ -54,6 +54,7 @@
 /* Begin PBXFileReference section */
 		C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFlowModuleFactory.swift; sourceTree = "<group>"; };
 		C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductsFlow.xcassets; sourceTree = "<group>"; };
+		C70E91B22668BE8A00E0DB05 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB6A2650321D00C16419 /* ProductFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProductFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76EEB6D2650321D00C16419 /* ProductFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductFlow.h; sourceTree = "<group>"; };
 		C76EEB6E2650321D00C16419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76EEB8E2650329900C16419 /* ProductUI.framework in Frameworks */,
-				C76EEB8A2650328E00C16419 /* FlowController.framework in Frameworks */,
+				C70E91B32668BE8A00E0DB05 /* Commons.framework in Frameworks */,
 				C76EEB912650329E00C16419 /* PaymentUI.framework in Frameworks */,
 				C76EEB94265032A400C16419 /* ShoppingAPI.framework in Frameworks */,
 			);
@@ -159,6 +160,7 @@
 		C76EEB882650328E00C16419 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C70E91B22668BE8A00E0DB05 /* Commons.framework */,
 				C76EEB93265032A400C16419 /* ShoppingAPI.framework */,
 				C76EEB902650329E00C16419 /* PaymentUI.framework */,
 				C76EEB8D2650329900C16419 /* ProductUI.framework */,

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FlowController
+import Commons
 
 class CreateAccountViewController: UIViewController {    
     @IBOutlet var emailTextField: UITextField!

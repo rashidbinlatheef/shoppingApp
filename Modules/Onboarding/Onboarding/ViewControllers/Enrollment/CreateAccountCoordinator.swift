@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FlowController
+import Commons
 import ShoppingAPI
 
 protocol CreateAccountCoordinatorProtocol: FlowEventsDelegate {

@@ -7,12 +7,6 @@
       <FileRef
          location = "group:../../Commons/Commons/Commons.xcodeproj">
       </FileRef>
-      <FileRef
-         location = "group:../../Networking/Networking/Networking.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../FlowController/FlowController/FlowController.xcodeproj">
-      </FileRef>
    </Group>
    <Group
       location = "group:../Modules"
@@ -51,16 +45,6 @@
          <FileRef
             location = "group:/Users/muhammed.rashid/Documents/Work@Me/ShoppingApp/Modules/Onboarding/OnboardingUI.xcodeproj">
          </FileRef>
-         <Group
-            location = "group:Onboarding"
-            name = "Onboarding">
-            <FileRef
-               location = "group:Onboarding.h">
-            </FileRef>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-         </Group>
       </Group>
    </Group>
    <Group

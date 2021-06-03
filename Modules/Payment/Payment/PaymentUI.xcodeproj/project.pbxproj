@@ -14,8 +14,6 @@
 		C7FFD9E226481AFD000D447C /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9D826481AFD000D447C /* PaymentUI.framework */; };
 		C7FFD9E726481AFD000D447C /* PaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9E626481AFD000D447C /* PaymentUITests.swift */; };
 		C7FFD9E926481AFD000D447C /* PaymentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD9DB26481AFD000D447C /* PaymentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FFD9F426481B27000D447C /* FlowController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F326481B27000D447C /* FlowController.framework */; };
-		C7FFD9F526481B27000D447C /* FlowController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F326481B27000D447C /* FlowController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; };
 		C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFDA0026481B8B000D447C /* PaymentUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymentUI+Interfaces.swift */; };
@@ -44,7 +42,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76EEB54264D99FF00C16419 /* ShoppingAPI.framework in Embed Frameworks */,
-				C7FFD9F526481B27000D447C /* FlowController.framework in Embed Frameworks */,
 				C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -79,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76EEB53264D99FF00C16419 /* ShoppingAPI.framework in Frameworks */,
-				C7FFD9F426481B27000D447C /* FlowController.framework in Frameworks */,
 				C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
