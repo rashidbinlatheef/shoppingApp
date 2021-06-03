@@ -15,8 +15,6 @@
 		C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAEB264C575D00C16419 /* ProfileUI.framework */; };
 		C76EEAED264C575D00C16419 /* ProfileUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAEB264C575D00C16419 /* ProfileUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAF1264D4A9600C16419 /* HomeFlow+interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEAF0264D4A9600C16419 /* HomeFlow+interfaces.swift */; };
-		C76EEB5626502F4D00C16419 /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5526502F4D00C16419 /* PaymentUI.framework */; };
-		C76EEB5726502F4D00C16419 /* PaymentUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5526502F4D00C16419 /* PaymentUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD8372647B1EC000D447C /* HomeFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD82D2647B1EC000D447C /* HomeFlow.framework */; };
 		C7FFD83C2647B1EC000D447C /* HomeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD83B2647B1EC000D447C /* HomeFlowTests.swift */; };
 		C7FFD83E2647B1EC000D447C /* HomeFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8302647B1EC000D447C /* HomeFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,7 +41,6 @@
 				C76EEAED264C575D00C16419 /* ProfileUI.framework in Embed Frameworks */,
 				C70E91BA2668BEA900E0DB05 /* Commons.framework in Embed Frameworks */,
 				C76EEAD5264C171E00C16419 /* ProductFlow.framework in Embed Frameworks */,
-				C76EEB5726502F4D00C16419 /* PaymentUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +78,6 @@
 				C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */,
 				C70E91B92668BEA900E0DB05 /* Commons.framework in Frameworks */,
 				C76EEAD4264C171E00C16419 /* ProductFlow.framework in Frameworks */,
-				C76EEB5626502F4D00C16419 /* PaymentUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
