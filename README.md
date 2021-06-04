@@ -6,8 +6,7 @@ To use this please checkout repo https://github.com/rashidbinlatheef/Commons.git
 
 ## App Module Structure
 
-<img width="1375" alt="App Module Structure" src="https://user-images.githubusercontent.com/6716919/120636380-34302200-c48b-11eb-803b-9f8c1852b93c.png">
-
+<img width="1372" alt="App Module Structure" src="https://user-images.githubusercontent.com/6716919/120769981-4b2e4d00-c53b-11eb-8c76-37ed83ca5c58.png">
 
 ## App fow layers and features
 <img width="1094" alt="App fow layers and features - expanded" src="https://user-images.githubusercontent.com/6716919/120636364-30040480-c48b-11eb-8108-e78043c27ab4.png">
