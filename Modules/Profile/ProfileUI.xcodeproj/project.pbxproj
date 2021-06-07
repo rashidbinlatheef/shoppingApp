@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C70E91932667973F00E0DB05 /* ProfileUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */; };
-		C70E91AF2668BE7F00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91AE2668BE7F00E0DB05 /* Commons.framework */; };
-		C70E91B02668BE7F00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91AE2668BE7F00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E9237266E4E0100E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; platformFilter = ios; productRef = C70E9236266E4E0100E0DB05 /* Commons */; };
 		C7FFD8C72647B27E000D447C /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8BD2647B27D000D447C /* ProfileUI.framework */; };
 		C7FFD8CC2647B27E000D447C /* ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8CB2647B27E000D447C /* ProfileUITests.swift */; };
 		C7FFD8CE2647B27E000D447C /* ProfileUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8C02647B27D000D447C /* ProfileUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,20 +27,6 @@
 			remoteInfo = Profile;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C70E91B12668BE7F00E0DB05 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C70E91B02668BE7F00E0DB05 /* Commons.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIModuleFactory.swift; sourceTree = "<group>"; };
@@ -64,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70E91AF2668BE7F00E0DB05 /* Commons.framework in Frameworks */,
+				C70E9237266E4E0100E0DB05 /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,13 +153,15 @@
 				C7FFD8B92647B27D000D447C /* Sources */,
 				C7FFD8BA2647B27D000D447C /* Frameworks */,
 				C7FFD8BB2647B27D000D447C /* Resources */,
-				C70E91B12668BE7F00E0DB05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ProfileUI;
+			packageProductDependencies = (
+				C70E9236266E4E0100E0DB05 /* Commons */,
+			);
 			productName = Profile;
 			productReference = C7FFD8BD2647B27D000D447C /* ProfileUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -224,6 +211,9 @@
 				Base,
 			);
 			mainGroup = C7FFD8B32647B27D000D447C;
+			packageReferences = (
+				C70E9235266E4E0100E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C7FFD8BE2647B27D000D447C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -521,6 +511,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9235266E4E0100E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons/";
+			requirement = {
+				branch = "package-test";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9236266E4E0100E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9235266E4E0100E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7FFD8B42647B27D000D447C /* Project object */;
 }

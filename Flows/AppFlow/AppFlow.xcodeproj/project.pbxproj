@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C70E9185266795E000E0DB05 /* AppFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */; };
+		C70E923A266E4E6D00E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9239266E4E6D00E0DB05 /* Commons */; };
 		C7FFD8132647B1D5000D447C /* AppFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8092647B1D5000D447C /* AppFlow.framework */; };
 		C7FFD8182647B1D5000D447C /* AppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8172647B1D5000D447C /* AppFlowTests.swift */; };
 		C7FFD81A2647B1D5000D447C /* AppFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD80C2647B1D5000D447C /* AppFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,8 +17,6 @@
 		C7FFD9792647C0AA000D447C /* HomeFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9772647C0AA000D447C /* HomeFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD97E2647C0C6000D447C /* OnboardingFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD97D2647C0C6000D447C /* OnboardingFlow.framework */; };
 		C7FFD97F2647C0C6000D447C /* OnboardingFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD97D2647C0C6000D447C /* OnboardingFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7FFD9812647C0DF000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9802647C0DF000D447C /* Commons.framework */; };
-		C7FFD9822647C0DF000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9802647C0DF000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD9872647C106000D447C /* AppFlow+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9862647C106000D447C /* AppFlow+Interfaces.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C7FFD9822647C0DF000D447C /* Commons.framework in Embed Frameworks */,
 				C7FFD97F2647C0C6000D447C /* OnboardingFlow.framework in Embed Frameworks */,
 				C7FFD9792647C0AA000D447C /* HomeFlow.framework in Embed Frameworks */,
 			);
@@ -70,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FFD9812647C0DF000D447C /* Commons.framework in Frameworks */,
+				C70E923A266E4E6D00E0DB05 /* Commons in Frameworks */,
 				C7FFD97E2647C0C6000D447C /* OnboardingFlow.framework in Frameworks */,
 				C7FFD9782647C0AA000D447C /* HomeFlow.framework in Frameworks */,
 			);
@@ -185,6 +183,9 @@
 			dependencies = (
 			);
 			name = AppFlow;
+			packageProductDependencies = (
+				C70E9239266E4E6D00E0DB05 /* Commons */,
+			);
 			productName = AppFlow;
 			productReference = C7FFD8092647B1D5000D447C /* AppFlow.framework */;
 			productType = "com.apple.product-type.framework";
@@ -234,6 +235,9 @@
 				Base,
 			);
 			mainGroup = C7FFD7FF2647B1D5000D447C;
+			packageReferences = (
+				C70E9238266E4E6D00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C7FFD80A2647B1D5000D447C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -529,6 +533,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9238266E4E6D00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons/";
+			requirement = {
+				branch = "package-test";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9239266E4E6D00E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9238266E4E6D00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7FFD8002647B1D5000D447C /* Project object */;
 }

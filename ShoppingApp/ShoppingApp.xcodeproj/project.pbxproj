@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C70E91BC2668BEB600E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91BB2668BEB600E0DB05 /* Commons.framework */; };
-		C70E91BD2668BEB600E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91BB2668BEB600E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E9228266E4CCF00E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9227266E4CCF00E0DB05 /* Commons */; };
 		C7FFD7CD2647B18A000D447C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD7CC2647B18A000D447C /* AppDelegate.swift */; };
 		C7FFD7CF2647B18A000D447C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD7CE2647B18A000D447C /* SceneDelegate.swift */; };
 		C7FFD7D72647B18A000D447C /* ShoppingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD7D52647B18A000D447C /* ShoppingApp.xcdatamodeld */; };
@@ -45,7 +44,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C7FFD96F2647B95A000D447C /* AppFlow.framework in Embed Frameworks */,
-				C70E91BD2668BEB600E0DB05 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E9228266E4CCF00E0DB05 /* Commons in Frameworks */,
 				C7FFD96E2647B95A000D447C /* AppFlow.framework in Frameworks */,
-				C70E91BC2668BEB600E0DB05 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +177,9 @@
 			dependencies = (
 			);
 			name = ShoppingApp;
+			packageProductDependencies = (
+				C70E9227266E4CCF00E0DB05 /* Commons */,
+			);
 			productName = ShoppingApp;
 			productReference = C7FFD7C92647B18A000D447C /* ShoppingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +251,9 @@
 				Base,
 			);
 			mainGroup = C7FFD7C02647B18A000D447C;
+			packageReferences = (
+				C70E9226266E4CCF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C7FFD7CA2647B18A000D447C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -613,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9226266E4CCF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons/";
+			requirement = {
+				branch = "package-test";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9227266E4CCF00E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9226266E4CCF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C7FFD7D52647B18A000D447C /* ShoppingApp.xcdatamodeld */ = {
