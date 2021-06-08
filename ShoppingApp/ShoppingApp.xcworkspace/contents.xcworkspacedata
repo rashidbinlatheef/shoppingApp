@@ -4,6 +4,9 @@
    <Group
       location = "container:"
       name = "CommonModules">
+      <FileRef
+         location = "group:../../Commons">
+      </FileRef>
    </Group>
    <Group
       location = "group:../Modules"
