@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C70E918D2667969500E0DB05 /* ProductFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E918C2667969500E0DB05 /* ProductFlowModuleFactory.swift */; };
 		C70E91982667BBAF00E0DB05 /* ProductsFlow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70E91972667BBAF00E0DB05 /* ProductsFlow.xcassets */; };
-		C70E91B32668BE8A00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B22668BE8A00E0DB05 /* Commons.framework */; };
-		C70E91B42668BE8A00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B22668BE8A00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E926B266FA54300E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E926A266FA54300E0DB05 /* Commons */; };
 		C76EEB742650321D00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB6A2650321D00C16419 /* ProductFlow.framework */; };
 		C76EEB792650321D00C16419 /* ProductFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB782650321D00C16419 /* ProductFlowTests.swift */; };
 		C76EEB7B2650321E00C16419 /* ProductFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB6D2650321D00C16419 /* ProductFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,7 +41,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76EEB8F2650329900C16419 /* ProductUI.framework in Embed Frameworks */,
-				C70E91B42668BE8A00E0DB05 /* Commons.framework in Embed Frameworks */,
 				C76EEB922650329E00C16419 /* PaymentUI.framework in Embed Frameworks */,
 				C76EEB95265032A400C16419 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
@@ -75,9 +73,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76EEB8E2650329900C16419 /* ProductUI.framework in Frameworks */,
-				C70E91B32668BE8A00E0DB05 /* Commons.framework in Frameworks */,
 				C76EEB912650329E00C16419 /* PaymentUI.framework in Frameworks */,
 				C76EEB94265032A400C16419 /* ShoppingAPI.framework in Frameworks */,
+				C70E926B266FA54300E0DB05 /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +196,9 @@
 			dependencies = (
 			);
 			name = ProductFlow;
+			packageProductDependencies = (
+				C70E926A266FA54300E0DB05 /* Commons */,
+			);
 			productName = ProductFlow;
 			productReference = C76EEB6A2650321D00C16419 /* ProductFlow.framework */;
 			productType = "com.apple.product-type.framework";
@@ -247,6 +248,9 @@
 				Base,
 			);
 			mainGroup = C76EEB602650321D00C16419;
+			packageReferences = (
+				C70E9269266FA54300E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C76EEB6B2650321D00C16419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -543,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9269266FA54300E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E926A266FA54300E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9269266FA54300E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C76EEB612650321D00C16419 /* Project object */;
 }

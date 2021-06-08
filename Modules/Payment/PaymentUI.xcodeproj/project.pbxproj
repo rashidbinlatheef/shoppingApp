@@ -3,19 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C70E917D2667935000E0DB05 /* PaymentUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E917C2667935000E0DB05 /* PaymentUIModuleFactory.swift */; };
+		C70E9283266FA5AF00E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9282266FA5AF00E0DB05 /* Commons */; };
 		C76EEB53264D99FF00C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB52264D99FF00C16419 /* ShoppingAPI.framework */; };
 		C76EEB54264D99FF00C16419 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB52264D99FF00C16419 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7C48A4A264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C48A49264ABF0C0024CEB8 /* PurchaseItemsCoordinator.swift */; };
 		C7FFD9E226481AFD000D447C /* PaymentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9D826481AFD000D447C /* PaymentUI.framework */; };
 		C7FFD9E726481AFD000D447C /* PaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9E626481AFD000D447C /* PaymentUITests.swift */; };
 		C7FFD9E926481AFD000D447C /* PaymentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD9DB26481AFD000D447C /* PaymentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; };
-		C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD9F726481B2C000D447C /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFDA0026481B8B000D447C /* PaymentUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD9FF26481B8B000D447C /* PaymentUI+Interfaces.swift */; };
 		C7FFDA0226481BE2000D447C /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFDA0126481BE2000D447C /* UpgradeViewController.swift */; };
 		C7FFDA0426481BEC000D447C /* Upgrade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FFDA0326481BEC000D447C /* Upgrade.storyboard */; };
@@ -42,7 +41,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76EEB54264D99FF00C16419 /* ShoppingAPI.framework in Embed Frameworks */,
-				C7FFD9F926481B2C000D447C /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E9283266FA5AF00E0DB05 /* Commons in Frameworks */,
 				C76EEB53264D99FF00C16419 /* ShoppingAPI.framework in Frameworks */,
-				C7FFD9F826481B2C000D447C /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +206,9 @@
 			dependencies = (
 			);
 			name = PaymentUI;
+			packageProductDependencies = (
+				C70E9282266FA5AF00E0DB05 /* Commons */,
+			);
 			productName = Payment;
 			productReference = C7FFD9D826481AFD000D447C /* PaymentUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -257,6 +258,9 @@
 				Base,
 			);
 			mainGroup = C7FFD9CE26481AFD000D447C;
+			packageReferences = (
+				C70E9281266FA5AF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C7FFD9D926481AFD000D447C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -557,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9281266FA5AF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9282266FA5AF00E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9281266FA5AF00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7FFD9CF26481AFD000D447C /* Project object */;
 }

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E927A266FA58F00E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9279266FA58F00E0DB05 /* Commons */; };
 		C76EEB25264D6E6200C16419 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */; };
 		C76EEB2A264D6E6200C16419 /* ShoppingAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB29264D6E6200C16419 /* ShoppingAPITests.swift */; };
 		C76EEB2C264D6E6200C16419 /* ShoppingAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C76EEB1E264D6E6200C16419 /* ShoppingAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,8 +15,6 @@
 		C76EEB4C264D992C00C16419 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB49264D992C00C16419 /* Product.swift */; };
 		C76EEB4D264D992C00C16419 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4A264D992C00C16419 /* User.swift */; };
 		C76EEB4E264D992C00C16419 /* UpgradePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB4B264D992C00C16419 /* UpgradePlan.swift */; };
-		C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; };
-		C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEB5826502F6C00C16419 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEB9F26513A9900C16419 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEB9E26513A9900C16419 /* DataStorage.swift */; };
 		C76EEBA126513B7200C16419 /* PersistantStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEBA026513B7200C16419 /* PersistantStorage.swift */; };
 		C76EEBA326513F4B00C16419 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76EEBA226513F4B00C16419 /* SessionManager.swift */; };
@@ -30,20 +29,6 @@
 			remoteInfo = ShoppingAPi;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C76EEB39264D6EBE00C16419 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C76EEB5A26502F6C00C16419 /* Commons.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76EEB5926502F6C00C16419 /* Commons.framework in Frameworks */,
+				C70E927A266FA58F00E0DB05 /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,13 +167,15 @@
 				C76EEB17264D6E6200C16419 /* Sources */,
 				C76EEB18264D6E6200C16419 /* Frameworks */,
 				C76EEB19264D6E6200C16419 /* Resources */,
-				C76EEB39264D6EBE00C16419 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ShoppingAPI;
+			packageProductDependencies = (
+				C70E9279266FA58F00E0DB05 /* Commons */,
+			);
 			productName = ShoppingAPi;
 			productReference = C76EEB1B264D6E6200C16419 /* ShoppingAPI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -238,6 +225,9 @@
 				Base,
 			);
 			mainGroup = C76EEB11264D6E6200C16419;
+			packageReferences = (
+				C70E9278266FA58F00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C76EEB1C264D6E6200C16419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,6 +527,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9278266FA58F00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9279266FA58F00E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9278266FA58F00E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C76EEB12264D6E6200C16419 /* Project object */;
 }

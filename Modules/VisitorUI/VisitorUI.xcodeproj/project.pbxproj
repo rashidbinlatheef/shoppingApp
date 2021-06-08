@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,7 @@
 		C70E91F82668C6BF00E0DB05 /* VisitorUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91F12668C6BF00E0DB05 /* VisitorUI+Interfaces.swift */; };
 		C70E9254266F6CD600E0DB05 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */; };
 		C70E9255266F6CD600E0DB05 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C70E925B266F6CFD00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925A266F6CFD00E0DB05 /* Commons.framework */; };
-		C70E925C266F6CFD00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925A266F6CFD00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E9277266FA58200E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9276266FA58200E0DB05 /* Commons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C70E9255266F6CD600E0DB05 /* ShoppingAPI.framework in Embed Frameworks */,
-				C70E925C266F6CFD00E0DB05 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E9277266FA58200E0DB05 /* Commons in Frameworks */,
 				C70E9254266F6CD600E0DB05 /* ShoppingAPI.framework in Frameworks */,
-				C70E925B266F6CFD00E0DB05 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +199,9 @@
 			dependencies = (
 			);
 			name = VisitorUI;
+			packageProductDependencies = (
+				C70E9276266FA58200E0DB05 /* Commons */,
+			);
 			productName = VisitorUI;
 			productReference = C70E91CA2668C54D00E0DB05 /* VisitorUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -249,6 +250,9 @@
 				Base,
 			);
 			mainGroup = C70E91C02668C54D00E0DB05;
+			packageReferences = (
+				C70E9275266FA58200E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C70E91CB2668C54D00E0DB05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -545,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E9275266FA58200E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9276266FA58200E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E9275266FA58200E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C70E91C12668C54D00E0DB05 /* Project object */;
 }

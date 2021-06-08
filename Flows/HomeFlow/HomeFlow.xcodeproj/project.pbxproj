@@ -3,15 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C70E91812667957B00E0DB05 /* HomeFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91802667957B00E0DB05 /* HomeFlowModuleFactory.swift */; };
-		C70E91B92668BEA900E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B82668BEA900E0DB05 /* Commons.framework */; };
-		C70E91BA2668BEA900E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91B82668BEA900E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C70E9261266F6D0C00E0DB05 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9260266F6D0C00E0DB05 /* ShoppingAPI.framework */; };
 		C70E9262266F6D0C00E0DB05 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9260266F6D0C00E0DB05 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E9271266FA56800E0DB05 /* Commons in Frameworks */ = {isa = PBXBuildFile; productRef = C70E9270266FA56800E0DB05 /* Commons */; };
 		C76EEAD4264C171E00C16419 /* ProductFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAD3264C171E00C16419 /* ProductFlow.framework */; };
 		C76EEAD5264C171E00C16419 /* ProductFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAD3264C171E00C16419 /* ProductFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76EEAEB264C575D00C16419 /* ProfileUI.framework */; };
@@ -41,7 +40,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C76EEAED264C575D00C16419 /* ProfileUI.framework in Embed Frameworks */,
-				C70E91BA2668BEA900E0DB05 /* Commons.framework in Embed Frameworks */,
 				C76EEAD5264C171E00C16419 /* ProductFlow.framework in Embed Frameworks */,
 				C70E9262266F6D0C00E0DB05 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
@@ -80,9 +78,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76EEAEC264C575D00C16419 /* ProfileUI.framework in Frameworks */,
-				C70E91B92668BEA900E0DB05 /* Commons.framework in Frameworks */,
 				C76EEAD4264C171E00C16419 /* ProductFlow.framework in Frameworks */,
 				C70E9261266F6D0C00E0DB05 /* ShoppingAPI.framework in Frameworks */,
+				C70E9271266FA56800E0DB05 /* Commons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +199,9 @@
 			dependencies = (
 			);
 			name = HomeFlow;
+			packageProductDependencies = (
+				C70E9270266FA56800E0DB05 /* Commons */,
+			);
 			productName = HomeFlow;
 			productReference = C7FFD82D2647B1EC000D447C /* HomeFlow.framework */;
 			productType = "com.apple.product-type.framework";
@@ -250,6 +251,9 @@
 				Base,
 			);
 			mainGroup = C7FFD8232647B1EC000D447C;
+			packageReferences = (
+				C70E926F266FA56800E0DB05 /* XCRemoteSwiftPackageReference "Commons" */,
+			);
 			productRefGroup = C7FFD82E2647B1EC000D447C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -545,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C70E926F266FA56800E0DB05 /* XCRemoteSwiftPackageReference "Commons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rashidbinlatheef/Commons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C70E9270266FA56800E0DB05 /* Commons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C70E926F266FA56800E0DB05 /* XCRemoteSwiftPackageReference "Commons" */;
+			productName = Commons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7FFD8242647B1EC000D447C /* Project object */;
 }

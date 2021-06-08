@@ -4,9 +4,6 @@
    <Group
       location = "container:"
       name = "CommonModules">
-      <FileRef
-         location = "group:../../Commons/Commons/Commons.xcodeproj">
-      </FileRef>
    </Group>
    <Group
       location = "group:../Modules"

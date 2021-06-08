@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Commons",
+        "repositoryURL": "https://github.com/rashidbinlatheef/Commons",
+        "state": {
+          "branch": null,
+          "revision": "325284178a350d1dcbdbc09a2d39c766eaf88956",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
