@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C70E9185266795E000E0DB05 /* AppFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */; };
+		C70E925E266F6D0400E0DB05 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925D266F6D0400E0DB05 /* ShoppingAPI.framework */; };
+		C70E925F266F6D0400E0DB05 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925D266F6D0400E0DB05 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD8132647B1D5000D447C /* AppFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8092647B1D5000D447C /* AppFlow.framework */; };
 		C7FFD8182647B1D5000D447C /* AppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8172647B1D5000D447C /* AppFlowTests.swift */; };
 		C7FFD81A2647B1D5000D447C /* AppFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD80C2647B1D5000D447C /* AppFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +43,7 @@
 				C7FFD9822647C0DF000D447C /* Commons.framework in Embed Frameworks */,
 				C7FFD97F2647C0C6000D447C /* OnboardingFlow.framework in Embed Frameworks */,
 				C7FFD9792647C0AA000D447C /* HomeFlow.framework in Embed Frameworks */,
+				C70E925F266F6D0400E0DB05 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		C70E9184266795E000E0DB05 /* AppFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowModuleFactory.swift; sourceTree = "<group>"; };
+		C70E925D266F6D0400E0DB05 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8092647B1D5000D447C /* AppFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD80C2647B1D5000D447C /* AppFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppFlow.h; sourceTree = "<group>"; };
 		C7FFD80D2647B1D5000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				C7FFD9812647C0DF000D447C /* Commons.framework in Frameworks */,
 				C7FFD97E2647C0C6000D447C /* OnboardingFlow.framework in Frameworks */,
 				C7FFD9782647C0AA000D447C /* HomeFlow.framework in Frameworks */,
+				C70E925E266F6D0400E0DB05 /* ShoppingAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +151,7 @@
 		C7FFD9722647C0A5000D447C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C70E925D266F6D0400E0DB05 /* ShoppingAPI.framework */,
 				C7FFD9832647C0E4000D447C /* Networking.framework */,
 				C7FFD9802647C0DF000D447C /* Commons.framework */,
 				C7FFD97D2647C0C6000D447C /* OnboardingFlow.framework */,

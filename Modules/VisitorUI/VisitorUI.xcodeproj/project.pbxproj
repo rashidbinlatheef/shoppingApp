@@ -17,6 +17,10 @@
 		C70E91F62668C6BF00E0DB05 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91EE2668C6BF00E0DB05 /* SignInViewController.swift */; };
 		C70E91F72668C6BF00E0DB05 /* VisitorUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91F02668C6BF00E0DB05 /* VisitorUIModuleFactory.swift */; };
 		C70E91F82668C6BF00E0DB05 /* VisitorUI+Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91F12668C6BF00E0DB05 /* VisitorUI+Interfaces.swift */; };
+		C70E9254266F6CD600E0DB05 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */; };
+		C70E9255266F6CD600E0DB05 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E925B266F6CFD00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925A266F6CFD00E0DB05 /* Commons.framework */; };
+		C70E925C266F6CFD00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E925A266F6CFD00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,21 @@
 			remoteInfo = VisitorUI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C70E9256266F6CD600E0DB05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C70E9255266F6CD600E0DB05 /* ShoppingAPI.framework in Embed Frameworks */,
+				C70E925C266F6CFD00E0DB05 /* Commons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C70E91CA2668C54D00E0DB05 /* VisitorUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisitorUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +62,8 @@
 		C70E91EE2668C6BF00E0DB05 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C70E91F02668C6BF00E0DB05 /* VisitorUIModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorUIModuleFactory.swift; sourceTree = "<group>"; };
 		C70E91F12668C6BF00E0DB05 /* VisitorUI+Interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisitorUI+Interfaces.swift"; sourceTree = "<group>"; };
+		C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70E925A266F6CFD00E0DB05 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E9254266F6CD600E0DB05 /* ShoppingAPI.framework in Frameworks */,
+				C70E925B266F6CFD00E0DB05 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +93,7 @@
 				C70E91CC2668C54D00E0DB05 /* VisitorUI */,
 				C70E91D72668C54D00E0DB05 /* VisitorUITests */,
 				C70E91CB2668C54D00E0DB05 /* Products */,
+				C70E9252266F6CD600E0DB05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +163,15 @@
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
+		C70E9252266F6CD600E0DB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70E925A266F6CFD00E0DB05 /* Commons.framework */,
+				C70E9253266F6CD600E0DB05 /* ShoppingAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -161,6 +194,7 @@
 				C70E91C62668C54D00E0DB05 /* Sources */,
 				C70E91C72668C54D00E0DB05 /* Frameworks */,
 				C70E91C82668C54D00E0DB05 /* Resources */,
+				C70E9256266F6CD600E0DB05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
