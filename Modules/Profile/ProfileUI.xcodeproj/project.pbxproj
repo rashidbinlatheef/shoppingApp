@@ -10,6 +10,8 @@
 		C70E91932667973F00E0DB05 /* ProfileUIModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */; };
 		C70E91AF2668BE7F00E0DB05 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91AE2668BE7F00E0DB05 /* Commons.framework */; };
 		C70E91B02668BE7F00E0DB05 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E91AE2668BE7F00E0DB05 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70E9258266F6CEA00E0DB05 /* ShoppingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9257266F6CEA00E0DB05 /* ShoppingAPI.framework */; };
+		C70E9259266F6CEA00E0DB05 /* ShoppingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70E9257266F6CEA00E0DB05 /* ShoppingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7FFD8C72647B27E000D447C /* ProfileUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFD8BD2647B27D000D447C /* ProfileUI.framework */; };
 		C7FFD8CC2647B27E000D447C /* ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFD8CB2647B27E000D447C /* ProfileUITests.swift */; };
 		C7FFD8CE2647B27E000D447C /* ProfileUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FFD8C02647B27D000D447C /* ProfileUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C70E91B02668BE7F00E0DB05 /* Commons.framework in Embed Frameworks */,
+				C70E9259266F6CEA00E0DB05 /* ShoppingAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +49,7 @@
 /* Begin PBXFileReference section */
 		C70E91922667973F00E0DB05 /* ProfileUIModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUIModuleFactory.swift; sourceTree = "<group>"; };
 		C70E91AE2668BE7F00E0DB05 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70E9257266F6CEA00E0DB05 /* ShoppingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8BD2647B27D000D447C /* ProfileUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProfileUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FFD8C02647B27D000D447C /* ProfileUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileUI.h; sourceTree = "<group>"; };
 		C7FFD8C12647B27D000D447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70E91AF2668BE7F00E0DB05 /* Commons.framework in Frameworks */,
+				C70E9258266F6CEA00E0DB05 /* ShoppingAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,7 @@
 		C7FFD9A92647C48A000D447C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C70E9257266F6CEA00E0DB05 /* ShoppingAPI.framework */,
 				C70E91AE2668BE7F00E0DB05 /* Commons.framework */,
 				C7FFD9AA2647C48A000D447C /* FlowController.framework */,
 			);
