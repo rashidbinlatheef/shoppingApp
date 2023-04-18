@@ -1,12 +1,35 @@
-name: Pull Request Stats
-
-on:
-  pull_request:
-    types: [opened]
-
-jobs:
-  stats:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run pull request stats
-        uses: flowwer-dev/pull-request-stats@master
+- name: Pull Request Stats
+  # You may pin to the exact commit or the version.
+  # uses: flowwer-dev/pull-request-stats@3fe3eeeb715cf88f13d57dda6f68b2cc113c776a
+  uses: flowwer-dev/pull-request-stats@v2.8.1
+  with:
+    # An optional Personal Access Token with enough permissions to fetch all required pull requests to calculate the stats.
+    token: # optional
+    # The default GitHub Token (secrets.GITHUB_TOKEN), used to publish comments as a bot. No need to assign a value for this input.
+    github-token: # default is ${{ github.token }}
+    # A comma separated list of github repositories to calculate the stats.
+    repositories: # optional
+    # An organization name to use all of its repositories to calculate the stats.
+    organization: # optional
+    # The length of the period used to calculate the stats, expressed in days
+    period: # optional, default is 30
+    # The maximum number of rows to display in the table. A value of `0` means unlimited.
+    limit: # optional, default is 0
+    # Whether to add charts to the stats or not. Possible values: "true" or "false"
+    charts: # optional, default is false
+    # The column used to sort the data. Possible values: "REVIEWS", "TIME" or "COMMENTS"
+    sort-by: # optional, default is REVIEWS
+    # Where to publish the results. Possible values: "COMMENT" or "DESCRIPTION"
+    publish-as: # optional, default is COMMENT
+    # Prevents from adding any external links in the stats
+    disable-links: # optional
+    # Indicates if the action is allowed to send monitoring data to the developer.
+    telemetry: # optional, default is true
+    # A Slack webhook URL to post resulting stats.
+    slack-webhook: # optional
+    # The Slack channel where stats will be posted. Required when a Slack webhook is configured.
+    slack-channel: # optional
+    # A Microsoft Teams webhook URL to post resulting stats.
+    teams-webhook: # optional
+    # A webhook URL to post resulting stats.
+    webhook: # optional
